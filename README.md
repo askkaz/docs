@@ -20,15 +20,15 @@ _Building channels and monetize your content to millions of viewers around the w
 * [Channel Development Guide](/develop/channel-development/)
 * [Tutorials + Guides](/develop/guides/)
 * [Monetization](/publish/monetization)
-* [SDK Reference](docs/develop/sdk-documentation)
-* [Sample Gallery](docs/develop/guides/examples.md)
-* [Developer Tools](docs/develop/developer-tools)
+* [SDK Reference](/develop/sdk-documentation)
+* [Sample Gallery](/develop/guides/examples.md)
+* [Developer Tools](/develop/developer-tools)
 
 
 ### Publish
 
 * [Channel Store](/publish/channel-store/)
 * [Platform features](/publish/platform-features/)
-* [Developer Dashboard](docs/publish/channel-store/developer-dashboard.md)
-* [Showcase](docs/publish/channel-showcase/)
-* [Beta Developers](docs/publish/beta-developer-program)
+* [Developer Dashboard](/publish/channel-store/developer-dashboard.md)
+* [Showcase](/publish/channel-showcase/)
+* [Beta Developers](/publish/beta-developer-program)
