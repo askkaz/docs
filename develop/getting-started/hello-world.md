@@ -2,7 +2,7 @@
 
 _How to load a sample channel application on your Roku device_
 
-![Hello World](https://blog.roku.com/developer/files/2016/02/image05-1.png)
+![Hello World](/images/hello-world.png)
 
 ### Overview
 
@@ -33,84 +33,103 @@ The Roku Developer Setup guide enables any Roku device to install sample applica
 
 **Developer Settings**         |  **Development Application Installer**
 :-------------------------:|:-------------------------:
-![Developer Settings](https://blog.roku.com/developer/files/2016/02/image00-1024x568.png)  |  ![Development Application Installer](https://blog.roku.com/developer/files/2016/02/image08-1024x489.png)
+![Developer Settings](/images/save-roku-device-url.png) |  ![Installer](/images/developer-application-installer.png)
 
 
-[Follow the Developer Setup Guide >](https://blog.roku.com/developer/2016/02/04/developer-setup-guide/)
+[Follow the Developer Setup Guide >](/develop/getting-started/setup-guide.md)
 
 ## 2\. Open the Development Application Installer
 
-After completing the steps covered in the [Developer Setup guide](https://blog.roku.com/developer/2016/02/03/developer-setup-guide/), open a web browser and navigate to the Roku device URL _(i.e._ [_http://192.168.x.x_](http://192.168.x.x)_)_ 
+After completing the steps covered in the [Developer Setup guide](/develop/getting-started/setup-guide.md), open a web browser and navigate to the Roku device URL _(i.e._ [_http://192.168.x.x_](http://192.168.x.x)_)_
 
-**_Note:_** _To connect your Roku device, make sure your computer and Roku are on the same local network._ 
+**_Note:_** _To connect your Roku device, make sure your computer and Roku are on the same local network._
 
-[![Logging into Roku Device](https://blog.roku.com/developer/files/2016/02/image11-e1454565719777.png)](https://blog.roku.com/developer/files/2016/02/image11.png) 
+![Logging into Roku Device](/images/installer-device-password.png)
 
-**Roku device credentials** 
-When you navigate to your Roku device, it will prompt for a **user name** (typically ‘rokudev’) and password was set during the Device Setup guide. Enter this information to continue. 
+**Roku device credentials**
+When you navigate to your Roku device, it will prompt for a **user name** (typically ‘rokudev’) and password was set during the Device Setup guide. Enter this information to continue.
 
 **Once the page successfully opens, you have successfully connected to the Roku device.**
 
-The primary screen will show the development application installer: [![Development Application Installer](https://blog.roku.com/developer/files/2016/02/image08.png)](https://blog.roku.com/developer/files/2016/02/image08.png) 
+The primary screen will show the development application installer:
+![Development Application Installer](/images/developer-application-installer.png)
 
-_Depending on the Roku OS version, your installer page may look like this:_ [![Old style for Dev Application Installer](https://blog.roku.com/developer/files/2016/02/image04.png)](https://blog.roku.com/developer/files/2016/02/image04.png) 
-
-**_Related guide:_** 
-[_How to update the software on a Roku device_](https://support.roku.com/hc/en-us/articles/208755668-How-can-I-update-the-software-on-my-Roku-player-)
+**_Related guide:_**
+[_How to update the software on a Roku device_](https://support.roku.com/hc/en-us/articles/208755668-How-can-I-update-the-software-on-my-Roku-player-\)
 
 ## 3\. Download and Install the Sample Channel Application
 
-Now that you have enabled **Developer Mode** on your Roku device and logged in, we can continue with downloading and opening a Sample Channel Application. 
+Now that you have enabled **Developer Mode** on your Roku device and logged in, we can continue with downloading and opening a Sample Channel Application.
 
-**Download the sample application located at:** [**github.com/rokudev/hello-world/raw/master/dist/apps/hello-world.zip** ](https://github.com/rokudev/hello-world/raw/master/dist/apps/hello-world.zip)
+**Download the sample application located at:** [github.com/rokudev/hello-world/raw/master/dist/apps/hello-world.zip ](https://github.com/rokudev/hello-world/raw/master/dist/apps/hello-world.zip)
 
-Once downloaded, take the .zip application and upload it to your Roku device using the Developer Application Installer: [![Upload zip channel](https://blog.roku.com/developer/files/2016/02/image14.png)](https://blog.roku.com/developer/files/2016/02/image14.png) 
+Once downloaded, take the .zip application and upload it to your Roku device using the Developer Application Installer:
 
-To finish this process, click on the **Install** button located below the upload option. If the sample channel contains no errors and the process runs successfully, the sample channel will launch on the Roku device: 
+![Upload zip channel](/images/upload-zip-channel.png)
 
-[![Hello World](https://blog.roku.com/developer/files/2016/02/image05.png)](https://blog.roku.com/developer/files/2016/02/image05.png) 
+To finish this process, click on the **Install** button located below the upload option. If the sample channel contains no errors and the process runs successfully, the sample channel will launch on the Roku device:
 
-**Note:** Roku devices in “Developer Mode” will allow one “side-loaded” channel at a time. If you run this process again, the new channel upload will replace the existing channel. 
+![Hello World](../../images/hello-world.png)
 
-**Finding your Sample Channel on the Roku Device** The developer channel will be automatically placed in the bottom row of your main channels, also known as “My Channels”.
+**Note:** Roku devices in “Developer Mode” will allow one “side-loaded” channel at a time. If you run this process again, the new channel upload will replace the existing channel.
 
-[![](https://blog.roku.com/developer/files/2016/02/roku-example-developer-app.png)](https://blog.roku.com/developer/files/2016/02/roku-example-developer-app.png)
+**Finding your Sample Channel on the Roku Device**
+The developer channel will be automatically placed in the bottom row of your main channels, also known as “My Channels”.
+
+![Sample channel](../../images/sample-channel-app.png)
 
 ## 4\. Editing the Sample Application
 
-When you uncompress the .zip directory, you’ll see the following setup: 
+When you uncompress the .zip directory, you’ll see the following setup:
 
-[![File view of hello world](https://blog.roku.com/developer/files/2016/02/image07.png)](https://blog.roku.com/developer/files/2016/02/image07.png) 
+![File view of hello world](/images/uncompressed-zip.png)
 
-**Here’s a breakdown of the common items inside the sample application:** [![](https://blog.roku.com/developer/files/2016/02/SceneGraph-Diagrams__12_Columns.png)](https://blog.roku.com/developer/files/2016/02/SceneGraph-Diagrams__12_Columns.png) 
-For this example, you will open the [helloworld.xml](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml) file that is located inside the components directory.
-
+**Here’s a breakdown of the common items inside the sample application:** ![](/images/hello-world-directory-structure.png)
+For this example, you will open the [[helloworld.xml](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5) file that is located inside the components directory.Â
 ### **helloworld.xml**
 
-[![hello world](https://blog.roku.com/developer/files/2016/02/image13.png)](https://blog.roku.com/developer/files/2016/02/image13.png) 
+[![hello world](https://blog.roku.com/developer/files/2016/02/image13.png)](https://blog.roku.com/developer/files/2016/02/image13.png)
 
-The example XML file above shows how a simple Label is created and centered on the screen. Specifically on [**Line 5**](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5), the Label’s value is set with [text="Hello World"](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5). **_Optional:_ **Review the code for additional attributes that can be set for this sample channel application. Change the value of the text field on line 5 to another phrase: 
+The example XML file above shows how a simple Label is created and centered on the screen. Specifically on [**Line 5**](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5), the Label’s value is set with [text="Hello World"](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5). **_Optional:_ **Review the code for additional attributes that can be set for this sample channel application. Change the value of the text field on line 5 to another phrase:
 
-[![helloooooo again](https://blog.roku.com/developer/files/2016/02/image15.png)](https://blog.roku.com/developer/files/2016/02/image15.png) 
+[![helloooooo again](https://blog.roku.com/developer/files/2016/02/image15.png)](https://blog.roku.com/developer/files/2016/02/image15.png)
 
 After saving the edits to [helloworld.xml](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml), select all the items inside the directory and zip compress utility on your computer.
 
 ### Compressing the contents of the Hello World directory
 
-**Note:** Remember to compress only the contents of the directory, not the parent folder. **For Example:** [![dont zip this way](https://blog.roku.com/developer/files/2016/02/image12.png)](https://blog.roku.com/developer/files/2016/02/image12.png) 
+**Note:** Remember to compress only the contents of the directory, not the parent folder.
 
-If you compress (“zip”) the parent folder, the Developer Application Installer will return an error. **The proper ways to compress the required files:** **Mac OS X:** Right click all selected files to compress into a .zip file. 
+**For Example:** If you compress (“zip”) the parent folder, the Developer Application Installer will return an error.
 
-[![zip this way](https://blog.roku.com/developer/files/2016/02/image06.png)](https://blog.roku.com/developer/files/2016/02/image06.png) 
+![dont zip this way](../../images/hello-world-dont-compress-directory.png)
 
-**Windows:** Simply select all the files and folders and right click to compress into a .zip file. 
 
-[![windows compress zip](https://blog.roku.com/developer/files/2016/02/image02.png)](https://blog.roku.com/developer/files/2016/02/image02.png)
+
+**Here are the proper ways to compress the required files:**
+
+**Mac OS X:** Right click all selected files to compress into a .zip file.
+
+![zip this way](../../images/hello-world-do-compress.png)
+
+**Windows:** Simply select all the files and folders and right click to compress into a .zip file.
+
+![Compress using Windows](../../images/hello-world-windows-compressed.png)
 
 ### Re-Upload the Channel Application
 
-Once you have recompressed the Channel application, open a web browser and navigate again to the Roku device URL _(i.e._ _http://192.168.x.x__)_ [![upload zip file](https://blog.roku.com/developer/files/2016/02/image09.png)](https://blog.roku.com/developer/files/2016/02/image09.png) Upload the .zip file and click **Install** You will immediately see the edited phrase in your Sample Channel Application: [![Hellooooo Again!](https://blog.roku.com/developer/files/2016/02/image10.png)](https://blog.roku.com/developer/files/2016/02/image10.png)
+Once you have recompressed the Channel application, open a web browser and navigate again to the Roku device URL _(i.e._ _http://192.168.x.x__)_
+
+![upload zip file](../../images/upload-zip-channel.png)
+
+Upload the .zip file and click **Install**
+
+You will immediately see the edited phrase in your Sample Channel Application:
+
+![Hellooooo Again!](../../images/helloooooo-again.png)
 
 ## 5\. Explore the Developer docs!
 
-Go to [sdkdocs.roku.com](http://sdkdocs.roku.com/) and explore the methods, parameters, and syntax for building rich and complex channel applications on the Roku platform. For samples regarding our new XML framework, Roku SceneGraph, go to [bit.ly/rokudevxml](http://bit.ly/rokudevxml) to get started!
+Go to the [Channel Development Guide](/develop/channel-development) and explore the methods, parameters, and syntax for building rich and complex channel applications on the Roku platform.
+
+For samples regarding our new XML framework, Roku SceneGraph, go to [Channel Samples Gallery](/develop/guides/examples.md) to get started!
