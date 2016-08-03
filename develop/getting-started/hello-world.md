@@ -16,15 +16,13 @@ In this guide, we will cover the essential steps for testing a ‘Hello World’
 4. Edit the Sample channel Application
 5. Re-upload Sample Channel onto a Roku device
 
-- - -
-
-## Requirements to follow this guide:
+**Requirements to follow this guide:**
 
 * A Roku device: [roku.com/products/compare](https://www.roku.com/products/compare)
 * A Roku account: [my.roku.com/signup](https://my.roku.com/signup)
 * Download the sample channel app: [hello-world.zip](https://github.com/rokudev/hello-world/raw/master/dist/apps/hello-world.zip)
 
-
+- - -
 
 
 ## 1\. Review the [Developer Setup Guide](https://blog.roku.com/developer/2016/02/04/developer-setup-guide/)
