@@ -14,22 +14,21 @@ _Building channels and monetize your content to millions of viewers around the w
 * [Design Showcase](/design/design-showcase.md)
 
 
-### Developer
+### Develop
 
 * [Getting Started](/develop/getting-started/)
 * [Channel Development Guide](/develop/channel-development/)
 * [Tutorials + Guides](/develop/guides/)
 * [Monetization](/publish/monetization)
-* SDK Reference
-* Sample Gallery
-* Developer Tools
-
+* [SDK Reference](docs/develop/sdk-documentation)
+* [Sample Gallery](docs/develop/guides/examples.md)
+* [Developer Tools](docs/develop/developer-tools)
 
 
 ### Publish
 
 * [Channel Store](/publish/channel-store/)
 * [Platform features](/publish/platform-features/)
-* Developer Portal
-* Showcase
-* Beta Developers
+* [Developer Dashboard](docs/publish/channel-store/developer-dashboard.md)
+* [Showcase](docs/publish/channel-showcase/)
+* [Beta Developers](docs/publish/beta-developer-program)
