@@ -1,3 +1,5 @@
+# Playing Video in SceneGraph
+
 This tutorial will show you how to add video to your SceneGraph project. If you haven’t already taken a look, see our previous guide on Building a SceneGraph UI [here](https://github.com/rokudev/docs/blob/master/develop/channel-development/scenegraph-ui.md)! This tutorial will be using the same example project from the previous guide.
 
 _Note: The following nodes and methods will be used in this guide._
