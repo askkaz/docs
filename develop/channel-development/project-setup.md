@@ -1,7 +1,6 @@
 # Project setup
-_Creating the structure for Roku channels_
 
-To start off, create a directory for the application it will contain, such as `VideoExample`. Within this directory, create the following subdirectories and files:
+All Roku channels developed using SceneGraph must contain the following directories and a `manifest` file:
 
 * `source` directory
 * `components` directory
@@ -22,7 +21,7 @@ sub Main()
 
    scene = screen.CreateScene("VideoExample")
    screen.show()
-   
+
    # exit the channel if back button is pressed at top-level
    while(true)
        msg = wait(0, m.port)
@@ -36,7 +35,7 @@ end sub
 
 ## Components Directory
 
-The components directory contains all the XML component and associated BrightScript code files needed for your SceneGraph scene. The XML files must have the extension `.xml`, and BrightScript code files must have the extension `.brs`. 
+The components directory contains all the XML component and associated BrightScript code files needed for your SceneGraph scene. The XML files must have the extension `.xml`, and BrightScript code files must have the extension `.brs`.
 
 Each XML component file contains a single `<component>` element that contains a specific SceneGraph node/element tree defining that component. When the channel is launched, all the files with extension `.xml` in the `components` directory are loaded and added to the available types of nodes that can be created.
 
@@ -59,16 +58,20 @@ At the root level there must be a file named `manifest` which contains attribute
 
 The following fields are required:
 
-```
+```brightscript
 ##  Channel Details
-title=application_title 
-major_version=major_version_number 
-minor_version=minor_version_number 
+title=application_title
+major_version=major_version_number
+minor_version=minor_version_number
 build_version=build_version_number
 
 ##  Main Menu Icon HD: 290x218px
-mm_icon_focus_hd=HD_focus_graphic_file_URI 
+mm_icon_focus_hd=HD_focus_graphic_file_URI
 
 ### FHD (1920x1080px) Splash Screen
-splash_screen_fhd=FHD_splash_screen_graphic_file_URI 
+splash_screen_fhd=FHD_splash_screen_graphic_file_URI
 ```
+
+## Building a UI using SceneGraph
+
+Proceed to the next section to get started with [Building a UI using SceneGraph](/develop/channel-development/scenegraph-ui.md).
