@@ -83,13 +83,11 @@ When you uncompress the .zip directory, you’ll see the following setup:
 ![File view of hello world](/images/uncompressed-zip.png)
 
 **Here’s a breakdown of the common items inside the sample application:** ![](/images/hello-world-directory-structure.png)
-For this example, you will open the [[helloworld.xml](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5) file that is located inside the components directory.
+For this example, you will open the [helloworld.xml](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5) file that is located inside the components directory.
 
 ### **helloworld.xml**
 
 ``` xml
-
-
 <?xml version="1.0" encoding="utf-8" ?>
 <component name="HelloWorld" extends="Scene">
 	<children>
@@ -102,8 +100,6 @@ For this example, you will open the [[helloworld.xml](https://github.com/rokudev
       	/>
     </children>
 </component>
-
-
 ```
 
 The example XML file above shows how a simple Label is created and centered on the screen. Specifically on [**Line 5**](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5), the Label’s value is set with [text="Hello World"](https://github.com/rokudev/hello-world/blob/master/source/components/helloworld.xml#L5).
