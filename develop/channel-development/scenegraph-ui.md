@@ -6,7 +6,7 @@ This guide will go over building a basic grid layout using SceneGraph.
 
 The main steps include:
 
-1. Scaling for Different Resolutions
+1. [Scaling for Different Resolutions](/develop/channel-development/scenegraph-ui.md#1-scaling-for-different-resolutions)
 2. Setup the HomeScene
 3. Setup the video content
 4. Create a grid using RowList
