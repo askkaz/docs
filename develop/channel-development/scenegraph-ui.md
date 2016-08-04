@@ -1,10 +1,11 @@
 # Building a SceneGraph UI
 
-This guide will go over building a basic grid layout in SceneGraph.
+This guide will go over building a basic grid layout using SceneGraph.
 
 ![](../../images/ch-dev-guide-example-ui.jpg)
 
 The main steps include:
+
 1. Scaling for Different Resolutions
 2. Setup the HomeScene
 3. Setup the video content
@@ -15,7 +16,7 @@ The main steps include:
 
 This example will be designed in FHD (1920x1080) resolution. To ensure the UI scales correctly across different resolutions, the `ui_resolutions` attribute will need to be added to the `manifest`.
 
-In the [Roku Plugin for Eclipse](develop/developer-tools/eclipse-plugin.md), open the manifest file and add `fhd` to `UI Resolutions` under `Resolution Attributes`.
+In the [Roku Plugin for Eclipse](/develop/developer-tools/eclipse-plugin.md), open the manifest file and add `fhd` to `UI Resolutions` under `Resolution Attributes`.
 
 ![](../../images/eclipse-ui-resolution-setting.png)
 
@@ -209,5 +210,7 @@ End Sub
 Finally, we have our finished UI:
 
 ![](../../images/ch-dev-guide-example-ui.jpg)
+
+## Adding Video
 
 Proceed to the next section for a guide on [adding video](/develop/channel-development/video-playback.md) to this project.
