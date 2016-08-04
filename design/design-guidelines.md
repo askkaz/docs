@@ -31,7 +31,7 @@ Channels on the Roku platfom with a great user experience entertain and delight 
 Preparing for how various TVs render your channel requires an understanding of Title and Action "Safe Zones". These are the recommended areas to ensuring the edges of your TV screen do not cut off the interface.
 
 HD Safe Zones  | FHD Safe Zones
---|--
+:-------------------------:|:-------------------------:
 ![](../images/Roku-Safe-Zones-HD.png)  |  ![](../images/Roku-Safe-Zones-FHD.png)
 
 ### Title Safe Zone
