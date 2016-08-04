@@ -1,6 +1,12 @@
 # Playing Video in SceneGraph
 
-This tutorial will show you how to add video to your SceneGraph project. If you haven’t already taken a look, see our previous guide on Building a SceneGraph UI [here](https://github.com/rokudev/docs/blob/master/develop/channel-development/scenegraph-ui.md)! This tutorial will be using the same example project from the previous guide.
+This guide demonstrates adding video to a SceneGraph project which is a continuation from [Building a SceneGraph UI](/develop/channel-development/scenegraph-ui.md). This guide uses the same example project.
+
+The main steps include:
+
+1. Create a video node
+2. Setup the video content
+3. Map the back button
 
 _Note: The following nodes and methods will be used in this guide._
 
@@ -8,12 +14,12 @@ _Note: The following nodes and methods will be used in this guide._
 * [Content Node](https://sdkdocs.roku.com/display/sdkdoc/ContentNode)
 * [OnKeyEvent()](https://sdkdocs.roku.com/pages/viewpage.action?pageId=1608547)
 
-## Create a Video Node
+## 1. Create a video node
 
 To make Video in SceneGraph we will add our video node inside our HomeScene.xml file in your components folder.
 
 ```brightscript
-<children>        
+<children>
     <Video
         id = “Video”
         height = “1080”
@@ -26,9 +32,9 @@ To make Video in SceneGraph we will add our video node inside our HomeScene.xml 
 
 Note that this is done at the bottom of our `.xml` file because we want the video to show in front of all our other nodes. A reference to the fields set into the video node can be found [here](https://sdkdocs.roku.com/display/sdkdoc/Video).
 
-## Setup the Video Content
+## 2. Setup the video content
 
-We will setup our video content in BrightScript in the `HomeScene.brs` file that we created when designing our UI. In the `HomeScene.brs` file, it’s important to set a pointer upon loading that references our video node that we created. 
+We will setup our video content in BrightScript in the `HomeScene.brs` file that we created when designing our UI. In the `HomeScene.brs` file, it’s important to set a pointer upon loading that references our video node that we created.
 
 ```brightscript
 m.Video = m.top.findNode(“Video”)
@@ -49,7 +55,7 @@ The function `playVideo()` takes our content node named m.videoContent that we c
 Sub playVideo()
     m.videoContent.url = RowList.content.getChild(m.RowList.rowItemFocused[0]).getChild(m.RowList.rowItemFocused[1].URL
     ‘rowItemFocused[0] is the row and rowItemFocused[1] is the item index in the row
-	
+
     m.videoContent.streamFormat = “mp4”
     m.Video.content = m.videoContent
     m.Video.visible = “true”
@@ -57,9 +63,9 @@ Sub playVideo()
 End Sub
 ```
 
-After, all that’s left is to play the video and make it visible. 
+After, all that’s left is to play the video and make it visible.
 
-## Map the Back Button
+## 3. Map the back button
 
 To make sure that the user is able to navigate back to the `RowList`, we have to set a function that maps our Back button to leave the video. To do this we will use the `onKeyEvent()` function. In this function, we hide the video and stop it from playing when the back button on the controller is pressed so that we can go back to the `RowList`.
 
