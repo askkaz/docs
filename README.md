@@ -1,9 +1,10 @@
-# Roku Developers
-#### Join the Open Streaming Platform
-
+# Roku Developer Documentation
+#### NOTE: The following repo is a work in progress.
+The existing sdk docs live at http://sdkdocs.roku.com
 
 _Building channels and monetize your content to millions of viewers around the world_
 
+### [Get Started](/develop/getting-started/)
 - - -
 
 
