@@ -34,6 +34,8 @@ HD Safe Zones  | FHD Safe Zones
 :-------------------------:|:-------------------------:
 ![](../images/Roku-Safe-Zones-HD.png)  |  ![](../images/Roku-Safe-Zones-FHD.png)
 
+We've also created a simple channel that shows these safe zones in action: https://github.com/rokudev/safe-zone-channel
+
 ### Title Safe Zone
 Keep text that you intend the audience to read within the **Title Safe Zone - 80% scale of UI resolution**
 
@@ -47,6 +49,17 @@ Keep important visual elements within the **Action Safe Zone**, content outside 
 * The FHD Action safe zone is 1726x970, offset from the upper left corner (0,0) by 96, 53.
 * The HD Action safe zone is 1150X646, offset from the upper left corner (0,0) by 64,35.
 * The SD Action safe zone is 648X432, offset from the upper left corner (0,0) by 36,24.
+
+
+#### Tool: Safe Zones Overlay
+To help developers with testing their titles and action spaces, we've created a simple function that overlays these screens on their channel. Great for UX testing on FHD and HD.
+
+You can find the project at https://github.com/rokudev/safe-zone-overlay
+
+_Here's a sample of the tool in action_
+![Safe Zones Overlay](../images/safe-zone-overlay-example.png)
+
+
 
 ## Navigation
 
