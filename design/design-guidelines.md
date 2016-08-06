@@ -64,7 +64,7 @@ _Here's a sample of the tool in action_
 ## Navigation
 
 Best Practices  | Rationale / Benefits
---|--
+:--|--:
 Use the remote navigation buttons consistently within your channel. _See the Design Guidelines for detailed recommendations.._  |  Channel-wide UI consistency helps provide a seamless, content-focused user experience
 Respect platform conventions and assign remote navigation button behavior consistent with the Roku system UI wherever applicable. _See the Design Guidelines for detailed recommendations.._  |  Again, system-wide UI consistency helps provide a seamless, content-focused user experience.
 Strive for “minimum clicks to consumption”.  Make it trivial for users to find and watch what they want.  |  Users want to watch videos, not navigate the UI.  Fast access to content delights users and increases time spent in a channel.
