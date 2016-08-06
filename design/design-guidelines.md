@@ -4,6 +4,8 @@
 
 Channels on the Roku platfom with a great user experience entertain and delight our shared audiences.  At the base, our mission is for the Roku platform to provide the best streaming experience for Television
 
+![roku os](/images/roku-os-1024x576.png)
+
 #### Core principles for UX:
 * **High expectations:** Consistently well-designed channels with value-add features reflecting insights into user needs and opportunities will make Roku the preferred entertainment choice, ensuring worthwhile fun.
 * **Focus on content:** The best UI is an invisible UI that enables effortless accomplishment. Users don’t want to navigate - they want to discover, browse, recommend, bookmark and consume content.
