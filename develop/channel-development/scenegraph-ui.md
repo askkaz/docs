@@ -1,4 +1,4 @@
-# Building the User Interface with Roku SceneGraph
+# Building a User Interface with Roku SceneGraph
 
 This guide will go over building a basic grid layout using SceneGraph.
 
