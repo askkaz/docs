@@ -4,9 +4,9 @@
 
 Developer Settings contains a host of essential tools for Roku channel development such as:
 
-* Installing or "side-loading" channels
-* Utilities to rekey a Roku device and take screenshots
-* Packaging channels for publication to the Channel Store
+* [Installing or "side-loading" channels](#application-installer)
+* [Utilities to rekey a Roku device and take screenshots](#utilities)
+* [Packaging channels for publication to the Channel Store](#application-packager)
 
 Before these tools are available, a Roku device must have Developer Settings enabled.
 
@@ -24,9 +24,9 @@ Refer to the [Hello World](/develop/getting-started/hello-world.md) guide for a 
 
 Several utilties are provided in Developer Settings:
 
-* Package Inspector
-* Rekey Utility
-* Screenshot Utility
+* [Package Inspector](#package-inspector)
+* [Rekey Utility](#rekey-utility)
+* [Screenshot Utility](#screenshot-utility)
 
 ![](../../images/dev-settings-screenshot-utility.png)
 
@@ -40,7 +40,7 @@ Channel registry data will be lost when using a different developer ID to update
 
 The rekey utility allows you to replace the signing key on the current Roku device with a key from an existing package. This utility is most useful when developing multiple channels on the same Roku device.
 
-Refer to the [Channel Packaging](/develop/guides/packaging.md) guide for a step-by-step process on rekeying a Roku device.
+Refer to the [Channel Packaging](/develop/guides/packaging.md#rekeying) guide for a step-by-step process on rekeying a Roku device.
 
 ### Screenshot Utility
 
