@@ -8,6 +8,10 @@ Publishing on the Roku Channel Store requires several core items — such as sou
 
 * [Packaging with Eclipse](#packaging-with-eclipse)
 * [Packaging using the Package Utilities](#packaging-using-the-package-utilities)
+ * A. [Install (or "side-load") channel on a Roku device](#a-install-or-side-load-channel-on-a-roku-device)
+ * B. [Open a telnet session](#b-open-a-telnet-session)
+ * C. [Run the genkey utility to create a signing key](#c-run-the-genkey-utility-to-create-a-signing-key)
+ * D. [Packaging the side-loaded channel](#d-packaging-the-side-loaded-channel)
 * [Rekeying](#rekeying)
 
 ## Packaging with Eclipse
@@ -76,7 +80,7 @@ Click on `Package` and a few short moments later the signed package can be downl
 
 ![](../../images/package-download.png)
 
-## 3. Rekeying
+## Rekeying
 
 When developing multiple applications, it’s good practice to sign each package with a different key. This ensures registry entries are not shared between channels. To sign different packages on the same device, it will have to be rekeyed.
 
