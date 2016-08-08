@@ -10,7 +10,7 @@ In this guide, we will cover the essential steps for testing a ‘Hello World’
 
 **Steps:**
 
-1. Review the [Developer Setup Guide](https://blog.roku.com/developer/2016/02/04/developer-setup-guide/)
+1. Review the [Developer Setup Guide](/develop/getting-started/setup-guide.md)
 2. Open the Developer Application Installer
 3. [Download](https://github.com/rokudev/hello-world/raw/master/dist/apps/hello-world.zip) and Install the Sample Channel Application
 4. Edit the Sample channel Application
@@ -25,7 +25,7 @@ In this guide, we will cover the essential steps for testing a ‘Hello World’
 - - -
 
 
-## 1\. Review the [Developer Setup Guide](https://blog.roku.com/developer/2016/02/04/developer-setup-guide/)
+## 1\. Review the [Developer Setup Guide](/develop/getting-started/setup-guide.md)
 
 The Roku Developer Setup guide enables any Roku device to install sample applications such as the basic hello world example in this guide.
 
