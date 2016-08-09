@@ -49,8 +49,8 @@ Refer to the [Channel Packaging Developer Tutorial](/docs/develop/guides/packagi
   </tr>
   <tr>
     <td>Samples</td>
-    <td>![](https://placeholdit.imgix.net/~text?txtsize=33&amp;txt=FHD+Screenshot+1920x1280px&amp;w=1920&amp;h=1280&amp;txtsize=99&amp;txtclr=101010&amp;bg=ebebeb&amp;fm=jpg)</td>
-    <td>![](https://placeholdit.imgix.net/~text?txtsize=33&txt=HD+Screenshot+1280x1080px&amp;w=1280&amp;h=720&amp;txtsize=99&amp;txtclr=101010&amp;bg=ebebeb&amp;fm=jpg)</td>
+    <td>![FHD Channel Screenshot](../images/fhd-channel-screenshot.jpeg)</td>
+    <td>![HD Channel Screenshot](../images/hd-channel-screenshot.jpeg)</td>
 
   </tr>
 </table>
