@@ -28,7 +28,7 @@ When publishing a channel, make sure to upload screenshots for display in the Ch
 * HD (1280×720)
 * FHD (1920×1080)
 
-Refer to the [Channel Packaging Developer Tutorial](/docs/develop/guides/packaging.md) for instructions on how to take screenshots.
+Refer to the [Channel Packaging Developer Tutorial](/develop/developer-tools/developer-settings.md#screenshot-utility) for instructions on how to take screenshots.
 
 **Note:** For High Quality video capture of the UI, some designers choose to use El Gato game capture devices. [More info](https://www.elgato.com/en/gaming)
 
