@@ -1,16 +1,17 @@
 # Building a User Interface with Roku SceneGraph
 
-This guide will go over building a basic grid layout using SceneGraph.
+This guide is a continuation from [parsing an XML feed](/develop/channel-development/parsing-feed.md). In this guide we'll cover building a basic grid layout using SceneGraph.
 
 ![](../../images/ch-dev-guide-example-ui.jpg)
 
 The main steps include:
 
-1. [Scaling for Different Resolutions](#1-scaling-for-different-resolutions)
+1. [Scaling for different resolutions](#1-scaling-for-different-resolutions)
 2. [Setup the HomeScene](#2-setup-the-homescene)
-3. [Setup the video content](#3-setup-the-video-content)
-4. [Create a grid using RowList](#4-create-a-grid-using-rowlist)
-5. [Create a overhang banner](#5-create-a-overhang-banner)
+3. [Create a grid using RowList](#3-create-a-grid-using-rowlist)
+4. [Create a overhang banner](#4-create-a-overhang-banner)
+5. [Populate the grid](#5-populate-the-grid)
+6. [Update overhang banner](#6-update-overhang-banner)
 
 ## 1. Scaling for different resolutions
 
@@ -51,13 +52,7 @@ sub Main()
 end sub
 ```
 
-## 3. Setup the video content
-
-The hardest part about creating your own custom UI will be setting up the content to pass into your components. This is usually done by parsing through a feed to grab the images, descriptions, video, audio, etc. that you want to include in your channel. Below is an example of how to parse through an XML feed.
-
-Follow our Parsing an XML Feed guide here!
-
-## 4. Create a grid using RowList
+## 3. Create a grid using RowList
 
 In the `components` folder is where we will put all our SceneGraph components. Create a new `.xml` file inside the `components` folder and name it `HomeScene`. This will be where we setup our UI. All SceneGraph nodes written in the XML file must be within the `<children>` element.
 
@@ -98,7 +93,7 @@ _Note: To understand each field of the nodes defined click the references below.
     />
 ```
 
-## 5. Create a overhang banner
+## 4. Create a overhang banner
 
 Next, we will make an overhang banner that displays the title, description, and artwork of the item being focused on from the `RowList`.
 
@@ -141,6 +136,8 @@ Next, we will make an overhang banner that displays the title, description, and 
   </Group>
 ```
 
+## 5. Populate the grid
+
 Now that all our nodes for the UI have been created, we need to populate them with content. This includes assigning the content from our XML feed to our `RowList` and setting the overhang to change based off the focused content in the `RowList`. This is most easily done in BrightScript. To keep our code clean, we will separate our BrightScript and XML in the HomeScene by pointing to a separate `.brs` file from our XML component.
 
 ```xml
@@ -171,13 +168,13 @@ m.LoadTask = CreateObject("roSGNode", "SampleTaskNode") 'Create XML Parsing task
 m.LoadTask.control = "RUN" 'Run the task node
 ```
 
-We can now set an observer that calls a function when a field is changed. Earlier when making the task node we created an interface field named `content` to store our content node. We can now assign it to our `RowList` from our `HomeScene`. In the line below, an observer is set to `LoadTask` to watch when the content field changes (after the task node has assigned the content node containing the XML to it).
+We can now set an observer that calls a function when a field is changed. In the [previous guide](/develop/channel-development/parsing-feed.md), we created an interface field named `content` to store our content node. We can now assign it to our `RowList` from our `HomeScene`. In the line below, an observer is set to `LoadTask` to watch when the content field changes (after the task node has assigned the content node containing the XML to it).
 
 ```brightscript
 m.LoadTask.observeField("content","rowListContentChanged")
 ```
 
-Once the content field changes, it calls the function named `rowListContentChanged()`
+Once the content field changes, it calls the function `rowListContentChanged()`
 
 ```brightscript
 Sub rowListContentChanged()
@@ -185,15 +182,17 @@ Sub rowListContentChanged()
 end Sub
 ```
 
-This is done to make sure that the task node is done running before assigning the content.
+This is done to make sure that the task node is finished before the content is assigned.
 
-As a final step, we set an observer that changes the info of our overhang when we focus on a new item inside our `RowList`.
+## 6. Update overhang banner
+
+As a final step, we set an observer that changes the info in the overhang when the focus moves onto a new item in the `RowList`.
 
 ```brightscript
 m.RowList.observeField("rowItemFocused", "changeContent")
 ```
 
-This observer calls the function `changeContent()` whenever a new item is focused in our `RowList`.
+This observer calls the function `changeContent()` whenever a new item is focused in the `RowList`.
 
 ```brightscript
 Sub changeContent() 'Changes info to be displayed on the overhang
