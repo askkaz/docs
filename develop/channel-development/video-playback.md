@@ -4,12 +4,11 @@ This guide demonstrates adding video to a SceneGraph project which is a continua
 
 The main steps include:
 
-1. Create a video node
-2. Setup the video content
-3. Map the back button
+1. [Create a video node](#1-create-a-video-node)
+2. [Setup the video content](#2setup-the-video-content)
+3. [Map the back button](#3-map-the-back-button)
 
-_Note: The following nodes and methods will be used in this guide._
-
+> :information_source: The following nodes and methods are used in this guide.
 * [Video Node](https://sdkdocs.roku.com/display/sdkdoc/Video)
 * [Content Node](https://sdkdocs.roku.com/display/sdkdoc/ContentNode)
 * [OnKeyEvent()](https://sdkdocs.roku.com/pages/viewpage.action?pageId=1608547)
@@ -30,7 +29,7 @@ To make Video in SceneGraph we will add our video node inside our HomeScene.xml 
 </children>
 ```
 
-Note that this is done at the bottom of our `.xml` file because we want the video to show in front of all our other nodes. A reference to the fields set into the video node can be found [here](https://sdkdocs.roku.com/display/sdkdoc/Video).
+> :information_source: This is done at the bottom of the `.xml` file because we want the video to show in front of all our other nodes. A reference to the fields set into the video node can be found [here](https://sdkdocs.roku.com/display/sdkdoc/Video).
 
 ## 2. Setup the video content
 
