@@ -2,15 +2,15 @@
 
 ## Overview
 
-This guide goes over how to parse an XML content feed using a task node in SceneGraph. Parsing an XML feed is one of the most common ways to retrieve content for Roku channels. This guide will be using an example feed supplied by Roku.
+This guide covers how to parse an XML content feed using a task node in SceneGraph. Parsing an XML feed is one of the most common ways to retrieve content for Roku channels. This guide will be using an example feed supplied by Roku.
 
 **Steps:**
 
-1. [Create Task node](#create-task-node)
-2. [Retrieve XML content feed](#retrieve-xml-content-feed)
-3. [Parse XML content feed](#parse-xml-content-feed)
-4. [Setup Task thread](#setup-task-thread)
-5. [Addendum: Customizing grid size](#addendum:-customizing-grid-size)
+1. [Create Task node](#1-create-task-node)
+2. [Retrieve XML content feed](#2-retrieve-xml-content-feed)
+3. [Parse XML content feed](#p3-arse-xml-content-feed)
+4. [Setup Task thread](#4-setup-task-thread)
+5. [Addendum: Customizing grid size](#5-addendum-customizing-grid-size)
 
 ## 1. Create Task Node
 
@@ -37,18 +37,18 @@ Function GetApiArray() 'This function makes a curl request and parses through al
 
 ## 3. Parse XML content feed
 
-Then we have to parse through the response string. Fortunately Roku includes it’s own `ParseXML` method. In the example provided, `ParseXML` is a function that calls Roku’s parse method on the `XMLElement` and returns `invalid` if it fails.
+Then we have to parse the response string using the `ParseXML` method. `ParseXML` is a function that will try to parse the response string on the `XMLElement` or return `invalid` if it fails.
 
 ```brightscript
 Function ParseXML(str As String) As dynamic 'Takes in response from curl request
     if str = invalid return invalid  'if the response is invalid it returns invalid
     xml = CreateObject("roXMLElement") '
-    if not xml.Parse(str) return invalid 'If the response is unparsable it returns invalid
+    if not xml.Parse(str) return invalid 'If the response cannot be parsed, it returns invalid
     return xml 'returns parsed XML if not invalid
 End Function
 ```
 
-### Manually parse feed if ParseXML fails
+### Manually parse feed if ParseXML() is invalid
 
 In a fallback case when it returns `invalid`, the response will have to be parsed manually.
 
