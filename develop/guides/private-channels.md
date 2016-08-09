@@ -36,10 +36,10 @@ Select the monetization method(s).
 
 ![Private channel monetization screenshot](../../images/image17.png)
 
-Fill out the channel properties:
+<p>Fill out the channel properties:
 <ul>
- 	<li >**Channel Stores:** Regions the channel will be available in. This does not apply to private channels.</li>
- 	<li >**Languages:** Languages to localize the Channel Store icons, descriptions and screenshots for</li>
+ 	<li>**Channel Stores:** Regions the channel will be available in. This does not apply to private channels.</li>
+ 	<li>**Languages:** Languages to localize the Channel Store icons, descriptions and screenshots for</li>
  	<li>**Required Features:**
  	<ul><li >**USB Support:** Select this **only** if the channel requires a Roku with a USB port to function</li>
  	<li >**Screensaver:** Select this **only** if the channel is/contains a screensaver</li>
@@ -49,7 +49,7 @@ Fill out the channel properties:
  	<li >**Internet Connection Required:** Yes/No</li>
  	<li >**Parental Hint:** Select the best rating for the content in the channel. If unsure, select _Content Not Rated_.</li>
  	<li >**Vanity Access Code:** Add a unique string of characters to make sharing the channel easier (ex. _https://my.roku.com/add/mychannel_). The vanity access code is only available after a channel has been published. **This code is the only way to download a private channel.**</li>
-</ul>
+</ul></p>
 
 ![Private channel channel properties screenshot](../../images/image03.png)
 
@@ -79,13 +79,13 @@ If none of the Channel Properties or Descriptions need to be updated, click on *
 
 ![Update example channel](../../images/image05 copy.png)
 
-On the **Package Submission** page, select:
+<p>On the **Package Submission** page, select:
 <ul>
  	<li >Channel Version</li>
  	<li >Minimum firmware required to run the channel</li>
  	<li >Application Package: Select signed package for publication</li>
 </ul>
-and then click on **Save Changes**.
+and then click on **Save Changes**.</p>
 
 Be sure to increment the channel’s major, minor, and build versions in the manifest as well as on the Roku Developer Portal for each package submitted.
 
