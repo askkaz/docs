@@ -6,9 +6,9 @@ The graphics that represent your product in the [Roku Channel Store](http://chan
 
 **Sections:**
 
-1. [Channel Poster](#Channel-Poster)
-2. [Channel Splash Screens](#Channel-Splash-Screens)
-3. [Screenshots](#Screenshots)
+1. [Channel Poster](#channel-poster)
+2. [Channel Splash Screens](#channel-splash-screens)
+3. [Screenshots](#screenshots)
 
 - - -
 
@@ -24,7 +24,7 @@ Splash screens are full size graphics displayed while the channel is loading fro
 
 
 ## Screenshots
-When publishing a channel, make sure to upload screenshots for display in the Channel Store. You can upload up to 6 screenshots for all locales. the sizes are:
+When publishing a channel, make sure to upload screenshots for display in the Channel Store. You can upload up to 6 screenshots for each resolution size and separately for each locale. the sizes are:
 * HD (1280×720)
 * FHD (1920×1080)
 
@@ -47,7 +47,7 @@ When publishing a channel, make sure to upload screenshots for display in the Ch
   </tr>
   <tr>
     <td>Dimension</td>
-    <td>1920x1280px</td>
+    <td>1920x1080px</td>
     <td>1280x720px</td>
   </tr>
 </table>
