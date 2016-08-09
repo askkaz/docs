@@ -15,7 +15,7 @@ The Roku Remote is packed with features that enable viewers to quickly find and 
 - - -
 
 ## Remote controls
-When building Channels on the Roku platform, it's critical to keep in mind the multiple options for Roku devices and various remote controls that run your products.
+When building Channels on the Roku platform, it's critical to keep in mind the various styles of remote controls that can interact with Roku devices.
 
 ![Roku 2 Remote](../images/roku-remotes-line-up.jpg)
 
@@ -68,7 +68,7 @@ Button | Description | Expected behavoir
 :--|---|--:
 :mute: | Mute | Mute the volume
 :sound: | Volume down | Reduce the current volume
-::loudspeaker:: | Volume up | Increase the current volume
+:loudspeaker: | Volume up | Increase the current volume
 :moon: | Display Sleep | Sleep timer
 :clock12: | Power | Turn on/off Roku TV
 :video_game: | Game mode | Increase TV refresh rate
