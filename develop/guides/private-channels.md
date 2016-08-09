@@ -38,17 +38,17 @@ Select the monetization method(s).
 
 <p>Fill out the channel properties:
 <ul>
- 	<li>**Channel Stores:** Regions the channel will be available in. This does not apply to private channels.</li>
- 	<li>**Languages:** Languages to localize the Channel Store icons, descriptions and screenshots for</li>
- 	<li>**Required Features:**
- 	<ul><li >**USB Support:** Select this **only** if the channel requires a Roku with a USB port to function</li>
- 	<li >**Screensaver:** Select this **only** if the channel is/contains a screensaver</li>
- 	<li >**Roku Game Remote:** Select this **only** if the channel requires a remote with A &amp; B buttons to function</li>
+ 	<li><b>Channel Stores:</b> Regions the channel will be available in. This does not apply to private channels.</li>
+ 	<li><b>Languages:</b> Languages to localize the Channel Store icons, descriptions and screenshots for</li>
+ 	<li><b>Required Features:</b>
+ 	<ul><li><b>USB Support:</b> Select this <b>only</b> if the channel requires a Roku with a USB port to function</li>
+ 	<li ><b>Screensaver:</b> Select this <b>only</b> if the channel is/contains a screensaver</li>
+ 	<li ><b>Roku Game Remote:</b> Select this <b>only</b> if the channel requires a remote with A &amp; B buttons to function</li>
 </ul>
- 	<li>**Classification:** Select the option that best describes the channel type</li>
- 	<li >**Internet Connection Required:** Yes/No</li>
- 	<li >**Parental Hint:** Select the best rating for the content in the channel. If unsure, select _Content Not Rated_.</li>
- 	<li >**Vanity Access Code:** Add a unique string of characters to make sharing the channel easier (ex. _https://my.roku.com/add/mychannel_). The vanity access code is only available after a channel has been published. **This code is the only way to download a private channel.**</li>
+ 	<li><b>Classification:</b> Select the option that best describes the channel type</li>
+ 	<li ><b>Internet Connection Required:</b> Yes/No</li>
+ 	<li ><b>Parental Hint:</b> Select the best rating for the content in the channel. If unsure, select _Content Not Rated_.</li>
+ 	<li ><b>Vanity Access Code:</b> Add a unique string of characters to make sharing the channel easier (ex. _https://my.roku.com/add/mychannel_). The vanity access code is only available after a channel has been published. <b>This code is the only way to download a private channel.</b></li>
 </ul></p>
 
 ![Private channel channel properties screenshot](../../images/image03.png)
