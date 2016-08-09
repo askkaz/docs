@@ -5,7 +5,7 @@ This guide demonstrates adding video to a SceneGraph project which is a continua
 The main steps include:
 
 1. [Create a video node](#1-create-a-video-node)
-2. [Setup the video content](#2setup-the-video-content)
+2. [Setup the video content](#2-setup-the-video-content)
 3. [Map the back button](#3-map-the-back-button)
 
 > :information_source: The following nodes and methods are used in this guide.
