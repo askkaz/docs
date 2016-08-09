@@ -31,7 +31,7 @@ ui_resolutions=fhd
 
 We will setup a simple main thread to create our `Screen` object and our message port. The screen will be used to display our home scene for our UI and our message port will be used to listen for events such as a command to exit the channel. Below is the setup for the main thread. Simply create a `.brs` file in the source folder, name it `main.brs`, and use the code below.
 
-_Note: m is a static variable_
+> :information_source: `m` is a static variable
 
 ```brightscript
 sub Main()
@@ -58,7 +58,7 @@ In the `components` folder is where we will put all our SceneGraph components. C
 
 SceneGraph judges the depth of its elements based off of where they are written inside your XML file. Nodes defined at the top of the XML file will be the furthest back while the bottom will be the nodes displayed at the front. First we will start by making a shaded background and a `RowList` to display on top of it.
 
-_Note: To understand each field of the nodes defined click the references below._
+> :information_source: Check the references below for the field definitions for each node.
 * [Rectangle](https://sdkdocs.roku.com/display/sdkdoc/Rectangle)
 * [RowList](https://sdkdocs.roku.com/display/sdkdoc/RowList)
 * [Group](https://sdkdocs.roku.com/display/sdkdoc/Group)
@@ -158,7 +158,7 @@ Sub init()
     ...
 ```
 
-_Note: We will use `m.top` to reference our `HomeScene` node because the BrightScript belongs to the `HomeScene` node._
+> :information_source: `m.top` is used to reference the `HomeScene` node as the BrightScript code belongs to the `HomeScene` node.
 
 Next, set the focus to the `RowList` in `init()` so once the channel is launched, the user can scroll through the `RowList`. We will also create an instance named `LoadTask` for the task node we created to retrieve our XML feed and run it.
 
