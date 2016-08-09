@@ -8,7 +8,7 @@ This guide covers how to parse an XML content feed using a task node in SceneGra
 
 1. [Create Task node](#1-create-task-node)
 2. [Retrieve XML content feed](#2-retrieve-xml-content-feed)
-3. [Parse XML content feed](#p3-arse-xml-content-feed)
+3. [Parse XML content feed](#3-parse-xml-content-feed)
 4. [Setup Task thread](#4-setup-task-thread)
 5. [Addendum: Customizing grid size](#5-addendum-customizing-grid-size)
 
