@@ -12,10 +12,12 @@ The advertising requirements within this document were established to ensure tha
 * [Roku Brand Philosophy](#Roku-Brand-Philosophy)
 * [Ad Creative Requirements](#Ad-Creative-Requirements)
 * [Creative Examples](#Creative-Examples)
+* [Display Ad Specs](#Display-Ad-Specs)
+* [Samples](#samples)
 
 - - -
 
-### Roku Brand Philosophy
+## Roku Brand Philosophy
 We’re constantly looking at ways to give consumers the best TV experience. We believe that they should be in control of what they watch and how much they pay, from subscription services, to renting the latest releases, to making cable TV even better. In other words, we deliver "TV on your terms.""
 
 #### "NOW THIS IS TV&#8482;"
@@ -97,7 +99,7 @@ When selecting imagery, aim to be:
   </tr>
 </table>
 
-### Best-In-Class Creative
+## Creative Examples
 Take a look at some examples of banner advertising that’s resonated with the Roku audience.
 
 ![Creative Banner Examples](../images/creative-banner-examples-1.png)
@@ -158,12 +160,6 @@ Final, approved creative is due 2 full business days before campaign launch.
     <td>_Required_</td>
     <td>_Required_</td>
   </tr>
-  <tr>
-    <td>Samples</td>
-    <td>![](https://placeholdit.imgix.net/~text?txtsize=33&amp;txt=Roku+Display+Ad+4K&amp;w=525&amp;h=735&amp;txtsize=72&amp;txtclr=101010&amp;bg=ebebeb&amp;fm=jpg)</td>
-    <td>![](https://placeholdit.imgix.net/~text?txtsize=33&txt=Roku+Display+Ad+HD&amp;w=350&amp;h=490&amp;txtsize=48&amp;txtclr=101010&amp;bg=ebebeb&amp;fm=jpg)</td>
-    <td>![](https://placeholdit.imgix.net/~text?txtsize=33&txt=Roku+Display+Ad+SD&amp;w=200&amp;h=280&amp;txtsize=32&amp;txtclr=101010&amp;bg=ebebeb&amp;fm=jpg)</td>
-  </tr>
 </table>
 
 **Additional details for Ad specs:**
@@ -171,6 +167,13 @@ Final, approved creative is due 2 full business days before campaign launch.
 * **Image colors:** Avoid pure white backgrounds – use #ebebeb Avoid pure reds, they bleed
 * **Deep links:** Deep Linking required. Banners promoting content MUST be linked to content. [Learn more about deep links](/docs/develop/guides/deep-linking.md)
 
+## Samples
+
+![Roku Display Ad 4k](../images/roku-display-ad-4k.jpeg)
+
+![Roku display ad HD](../images/roku-display-ad-hd.jpeg)
+
+![Roku Display Ad SD](../images/roku-display-ad-sd.jpeg)
 
 ## Learn more
 For more details on promotions, display ads, and growing your viewership, go to https://www.roku.com/advertising
