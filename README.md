@@ -1,21 +1,22 @@
 # Roku Developer Documentation
-#### NOTE: The following repo is a work in progress.
-The existing sdk docs live at http://sdkdocs.roku.com
-
 _Building channels and monetize your content to millions of viewers around the world_
+
+> :information_source: The following repo is a work in progress.
+>
+> The existing SDK docs are currently found here: http://sdkdocs.roku.com
 
 ### [Get Started](/develop/getting-started/)
 - - -
 
 
-### Design
+### [Design](/design/)
 
 * [Design Guidelines](/design/design-guidelines.md)
 * [Design Resources](/design/design-resources.md)
 * [Design Showcase](/design/design-showcase.md)
 
 
-### Develop
+### [Develop](/develop/)
 
 * [Getting Started](/develop/getting-started/)
 * [Channel Development Guide](/develop/channel-development/)
@@ -26,7 +27,7 @@ _Building channels and monetize your content to millions of viewers around the w
 * [Developer Tools](/develop/developer-tools)
 
 
-### Publish
+### [Publish](/publish/)
 
 * [Channel Store](/publish/channel-store/)
 * [Platform features](/publish/platform-features/)
