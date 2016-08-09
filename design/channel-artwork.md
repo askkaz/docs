@@ -47,10 +47,11 @@ Refer to the [Channel Packaging Developer Tutorial](/docs/develop/guides/packagi
     <td>1920x1280px</td>
     <td>1280x720px</td>
   </tr>
-  <tr>
-    <td>Samples</td>
-    <td>![FHD Channel Screenshot](../images/fhd-channel-screenshot.jpeg)</td>
-    <td>![HD Channel Screenshot](../images/hd-channel-screenshot.jpeg)</td>
-
-  </tr>
 </table>
+
+### Screenshot samples
+**FHD Screenshot**
+![FHD Channel Screenshot](../images/fhd-channel-screenshot.jpeg)
+
+**HD Screenshot**
+![HD Channel Screenshot](../images/hd-channel-screenshot.jpeg)
