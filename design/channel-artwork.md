@@ -5,6 +5,7 @@ The graphics that represent your product in the [Roku Channel Store](http://chan
 (add the overview of why these graphics are important here)
 
 **Sections:**
+
 1. [Channel Poster](#Channel-Poster)
 2. [Channel Splash Screens](#Channel-Splash-Screens)
 3. [Screenshots](#Screenshots)
