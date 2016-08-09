@@ -46,9 +46,9 @@ Using the standard export option for projects, the Roku plugin for Eclipse enabl
 ![Packaging channel](../../images/eclipse_7.png)
 
 <h2>Installation Steps:</h2>
-<p>_**Note:** Make sure any previous versions of the Roku plugin for Eclipse are uninstalled via Eclipse &gt; Help &gt; Installation Details &gt; BrightScript core &gt; Uninstall. In addition the minimum required version of Eclipse is the “Mars” release._</p>
+<p><i><b>Note:</b> Make sure any previous versions of the Roku plugin for Eclipse are uninstalled via Eclipse &gt; Help &gt; Installation Details &gt; BrightScript core &gt; Uninstall. In addition the minimum required version of Eclipse is the “Mars” release.</i></p>
 
-<p>_**Workspace:** We encourage you to start your Roku projects in a fresh workspace. You can copy your projects back in afterwards. Thanks!_</p>
+<p><i><b>Workspace:</b> We encourage you to start your Roku projects in a fresh workspace. You can copy your projects back in afterwards. Thanks!</i></p>
 <ol>
  	<li>Download Java version 8: <a href="http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html">oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html</a></li>
  	<li>Download the latest version of the Eclipse Installer _(currently version “Mars”)_ for Java IDE Developers: <a href="https://eclipse.org/downloads/installer-instructions.php">eclipse.org/downloads/installer-instructions.php</a></li>
