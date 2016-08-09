@@ -1,9 +1,9 @@
-# Roku Developer Documentation
-_Building channels and monetize your content to millions of viewers around the world_
-
 > :information_source: The following repo is a work in progress.
 >
 > The existing SDK docs are currently found here: http://sdkdocs.roku.com
+
+# Roku Developer Documentation
+_Building channels and monetize your content to millions of viewers around the world_
 
 ### [Get Started](/develop/getting-started/)
 - - -
