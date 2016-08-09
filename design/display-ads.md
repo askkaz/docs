@@ -4,15 +4,15 @@ _Details and specifications for our Home Screen ad banners._
 ### Overview
 Roku provides an effective and unique advertising platform allowing brands to engage with captive audiences via the largest in-home screen. At Roku’s core, we strive to connect consumers with content that interests and engages them, and advertising on Roku must uphold this same principal.
 
-![Creative Banner Examples](../images/creative-banner-examples-1.png)
+![Creative Banner Examples](../images/creative-banner-examples-1.jpg)
 
 The advertising requirements within this document were established to ensure that ads feel authentic to the overall Roku experience and are always grounded in entertainment.
 
 **Sections**
-* [Roku Brand Philosophy](#Roku-Brand-Philosophy)
-* [Ad Creative Requirements](#Ad-Creative-Requirements)
-* [Creative Examples](#Creative-Examples)
-* [Display Ad Specs](#Display-Ad-Specs)
+* [Roku Brand Philosophy](#roku-brand-philosophy)
+* [Ad Creative Requirements](#ad-creative-requirements)
+* [Creative Examples](#creative-examples)
+* [Display Ad Specs](#display-ad-specs)
 * [Samples](#samples)
 
 - - -
@@ -42,13 +42,13 @@ All display advertising on Roku must provide value to the consumer and not distr
 ### Writing Style: Headlines and CTAs
 When crafting messaging, strive to be:
 * **Transparent.** Are you clearly describing your offer? Don’t hide behind colorful language – be open and honest.
-* **Enthusiastic. **Show excitement! TV, movies and entertainment are fun; advertising can be, too.
+* **Enthusiastic.** Show excitement! TV, movies and entertainment are fun; advertising can be, too.
 * **Approachable.** Is your message welcoming, or is it pushy? We want to connect consumers with great content, not push products/sales.
 
 <table>
   <tr>
     <th>DO</th>
-    <th>_DON'T_</th>
+    <th>DON'T</th>
   </tr>
   <tr>
     <td>Be straightforward – no click bait. What’s the offer? Tell consumers.</td>
@@ -79,7 +79,7 @@ When selecting imagery, aim to be:
 <table>
   <tr>
     <th>DO</th>
-    <th>_DON'T_</th>
+    <th>DON'T</th>
   </tr>
   <tr>
     <td>Be bold. Show action, motion and emotion.</td>
@@ -102,9 +102,9 @@ When selecting imagery, aim to be:
 ## Creative Examples
 Take a look at some examples of banner advertising that’s resonated with the Roku audience.
 
-![Creative Banner Examples](../images/creative-banner-examples-1.png)
+![Creative Banner Examples](../images/creative-banner-examples-1.jpg)
 
-![Creative Banner Examples](../images/creative-banner-examples-2.png)
+![Creative Banner Examples](../images/creative-banner-examples-2.jpg)
 
 ## Display Ad Specs
 All images and/or questions can be submitted to [adcreative@roku.com](mailto:adcreative@roku.com)
@@ -156,16 +156,16 @@ Final, approved creative is due 2 full business days before campaign launch.
   </tr>
   <tr>
     <td>Deep links</td>
-    <td>_Required_</td>
-    <td>_Required_</td>
-    <td>_Required_</td>
+    <td>Required</td>
+    <td>Required</td>
+    <td>Required</td>
   </tr>
 </table>
 
 **Additional details for Ad specs:**
 * **Image formats:** Use .jpg for ads without transparency and .png graphics for ads with transparency
 * **Image colors:** Avoid pure white backgrounds – use #ebebeb Avoid pure reds, they bleed
-* **Deep links:** Deep Linking required. Banners promoting content MUST be linked to content. [Learn more about deep links](/docs/develop/guides/deep-linking.md)
+* **Deep links:** Deep Linking required. Banners promoting content MUST be linked to content. [Learn more about deep links](/develop/guides/deep-linking.md)
 
 ## Samples
 

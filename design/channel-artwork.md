@@ -32,6 +32,8 @@ When publishing a channel, make sure to upload screenshots for display in the Ch
 >
 > **Professional video capture devices** - for High Quality video capture of the UI, some designers choose to use El Gato game capture devices. [More info](https://www.elgato.com/en/gaming)
 
+
+
 <table>
 <tr>
   <th>Screenshots</th>
