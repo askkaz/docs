@@ -29,8 +29,8 @@ When publishing a channel, make sure to upload screenshots for display in the Ch
 * FHD (1920×1080)
 
 > :information_source: Refer to the [Developer Screenshot Utility](/develop/developer-tools/developer-settings.md#screenshot-utility) for instructions on how to take screenshots.
-
-**Note:** For High Quality video capture of the UI, some designers choose to use El Gato game capture devices. [More info](https://www.elgato.com/en/gaming)
+>
+> **Professional video capture devices** - for High Quality video capture of the UI, some designers choose to use El Gato game capture devices. [More info](https://www.elgato.com/en/gaming)
 
 <table>
 <tr>
