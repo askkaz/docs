@@ -5,6 +5,7 @@ The main tool for interaction on Roku OS is the Roku Remote.
 The Roku Remote is packed with features that enable viewers to quickly find and watch their favorite content. In addition it enables game developers to provide a playing experience for their audience. The following lays out the expected behavoir of remotes and what customers for UX.
 
 **Sections:**
+
 1. [Remote controls](#remote-controls)
 2. [Buttons](#buttons)
 3. [Voice](#voice)
