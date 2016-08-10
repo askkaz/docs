@@ -1,5 +1,3 @@
-
-
 # Roku Developers – Getting Started
 
 _The first steps to launching a channel on the Roku Platform_
