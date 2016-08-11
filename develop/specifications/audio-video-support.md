@@ -50,7 +50,7 @@ Roku devices support the following file types:
 * MKV
 * WebM<sup>1</sup>
 
-Videos can be encoded using `H.264`, `HEVC (H.265)`, or `VP9` codecs. HEVC and VP9 are only supported on Roku 4 and Roku 4K TVs.
+Videos can be encoded using `H.264`, `HEVC (H.265)`, or `VP9` codecs.
 
 |                          | H.264   | HEVC (H.265)<sup>1</sup> | VP9<sup>1</sup> |
 | ------------------------ | ------- | ------------------------ | --------------- |
@@ -76,7 +76,7 @@ Videos can be encoded using `H.264`, `HEVC (H.265)`, or `VP9` codecs. HEVC and V
 | TEE<sup>5</sup> | Yes | No
 | HDCP | 2.2 | 1.4
 
-> <sup>1</sup> Only supported on **Roku 4 and Roku 4K TV** devices.
+> <sup>1</sup> Only supported on **Roku 4K capable** devices.
 
 > <sup>2</sup> The dimensions vary on a title-by-title basis depending on the source material and the target aspect ratio for the encoding (such as 4:3 or 16:9).  Content should always be encoded at full width, and the height is adjusted. For example, a 1.66 aspect ratio source is encoded as a 720x432 video and displayed as letterboxed for a 4:3 display.
 
