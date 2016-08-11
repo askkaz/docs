@@ -1,6 +1,6 @@
 # Developer Settings
 
-## Overview
+### Overview
 
 Developer Settings contains a host of essential tools for Roku channel development such as:
 
@@ -8,8 +8,7 @@ Developer Settings contains a host of essential tools for Roku channel developme
 * [Utilities to rekey a Roku device and take screenshots](#utilities)
 * [Packaging channels for publication to the Channel Store](#application-packager)
 
-Before these tools are available, a Roku device must have Developer Settings enabled.
-
+> :information_source: Before these tools are available, a Roku device must have Developer Settings enabled.
 Refer to the [Setup Guide](/develop/getting-started/setup-guide.md) for a step-by-step process.
 
 ## Application Installer
