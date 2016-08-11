@@ -1,8 +1,8 @@
 # Developing with the Roku SDK
 Building channel applications with our SDK
 
-* [Getting Started](getting-started.md)
-* [Channel Development Guide](channel-development.md)
-* [SDK Documentation](sdk-documentation.md)
-* [Specifications](specifications.md)
-* [Developer Tools](developer-tools.md)
+* [Getting Started](getting-started)
+* [Channel Development Guide](channel-development)
+* [SDK Documentation](sdk-documentation)
+* [Specifications](specifications)
+* [Developer Tools](developer-tools)
