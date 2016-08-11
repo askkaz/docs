@@ -13,11 +13,11 @@ Refer to the [Setup Guide](/develop/getting-started/setup-guide.md) for a step-b
 
 ## Application Installer
 
-One of the most useful tools in Developer Settings is the Package Installer. This enables installing or "side-loading" a channel directly to a Roku device to test and QA before submitting for publication.
+One of the most useful tools in Developer Settings is the Application Installer. This enables installing or "side-loading" a channel directly to a Roku device to test and QA before submitting for publication.
 
 ![](../../images/dev-settings-application-installer.png)
 
-Refer to the [Hello World](/develop/getting-started/hello-world.md) guide for a step-by-step process on installing a channel using the Package Installer.
+Refer to the [Hello World](/develop/getting-started/hello-world.md) guide for a step-by-step process on installing a channel using the Application Installer.
 
 ## Utilities
 
