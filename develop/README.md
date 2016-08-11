@@ -49,7 +49,7 @@ API References
 Details on supported formats and specifications on the Roku Platform
 
 * [Roku devices](/develop/specifications/roku-devices.md) - Overview of all Roku devices, past and present
-* [Video Streaming](/develop/specifications/video-streaming.md) - supported audio & video encodings
+* [Audio/Video Overview](/develop/specifications/audio-video-support.md) - supported audio & video formats
 * [Content Protection](/develop/specifications/content-protection.md) - supported DRM formats and specifications
 * [Closed Captioning](/develop/specifications/closed-captioning.md) - supported caption formats and specifications
 * [Manifest file](/develop/specifications/manifest.md) - Manifest specifications and attributes
