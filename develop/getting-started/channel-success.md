@@ -1,6 +1,8 @@
-Success on the Roku Platform
+# Success on the Roku Platform
 
 _Building great channels on the Roku Platform requires several key planning stages. The following guide provides onboarding details and links to the relevant guides and documentation._
+
+- - -
 
 ## :bulb: Planning
 Understanding the capabilities and key requirements for creating a great Roku Channel.
