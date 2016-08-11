@@ -2,7 +2,7 @@
 Details on building great Roku channels
 
 ### Overview
-We've pulled together standalone guides that show the core concepts for building Roky channels. Follow any of the following to add core features into your channels.
+We've pulled together standalone guides that show the core concepts for building Roku channels. Follow any of these guides to add core features to your channels.
 
 - - -
 
