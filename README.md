@@ -3,34 +3,46 @@
 > The existing SDK docs are currently found here: http://sdkdocs.roku.com
 
 # Roku Developer Documentation
-_Building channels and monetize your content to millions of viewers around the world_
+_Building channels and monetizing your content to millions of viewers around the world_
 
-### [Get Started](/develop/getting-started/)
+## [Getting Started](/develop/getting-started/)
+Getting started with developing on the Roku Platform
+
+* [Platform Overview](/develop/getting-started/platform-overview.md) - Overview of the Roku Platform
+* [Success on the Roku Platform](/develop/getting-started/channel-success.md) - Succeeding on the Roku Platform
+* [How Roku Channels Work](/develop/getting-started/how-channels-work.md) - How and where to host content
+* [Developer Setup Guide](/develop/getting-started/setup-guide.md) - How to enable Developer Settings
+* [Hello World](/develop/getting-started/hello-world.md) - A simple Hello World tutorial
 - - -
 
 
-### [Design](/design/)
+## [Design](/design/)
 
-* [Design Guidelines](/design/design-guidelines.md)
+* [Roku OS Interface](/design/roku-os-interface.md)
+* [Roku Remote](/design/roku-remote.md)
+* [UX Guidelines](/design/design-guidelines.md)
+* [Channel Artwork](/design/channel-artwork.md)
+* [Roku Display Ads](/design/display-ads.md)
 * [Design Resources](/design/design-resources.md)
 * [Design Showcase](/design/design-showcase.md)
 
 
-### [Develop](/develop/)
+## [Develop](/develop/)
 
 * [Getting Started](/develop/getting-started/)
 * [Channel Development Guide](/develop/channel-development/)
-* [Tutorials + Guides](/develop/guides/)
-* [Monetization](/publish/monetization)
+* [Developer Guides and Tutorials](/develop/guides/)
+ * [Examples Gallery](/develop/guides/examples.md)
 * [SDK Reference](/develop/sdk-documentation)
-* [Sample Gallery](/develop/guides/examples.md)
+* [Specifications](/develop/specifications/)
 * [Developer Tools](/develop/developer-tools)
 
 
-### [Publish](/publish/)
+## [Publish](/publish/)
 
-* [Channel Store](/publish/channel-store/)
 * [Platform features](/publish/platform-features/)
-* [Developer Dashboard](/publish/channel-store/developer-dashboard.md)
-* [Showcase](/publish/channel-showcase/)
+* [Channel Store](/publish/channel-store/)
+ * [Developer Dashboard](/publish/channel-store/developer-dashboard.md)
+* [Monetization](/publish/monetization)
+* [Channel Showcase](/publish/channel-showcase/)
 * [Beta Developers](/publish/beta-developer-program)
