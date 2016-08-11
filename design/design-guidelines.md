@@ -1,5 +1,9 @@
 # Roku Channel Design/UX Guidelines
 
+> :information_source: The following guidelines are a work in progress.
+>
+> Check back often for updates.
+
 ### Overview
 
 This guide outlines best practices for partner channel design on the Roku platform, from the user experience perspective.
@@ -114,11 +118,11 @@ For ad-supported channels: When presenting mid-roll ads, strive to insert the ad
 For ad-supported channels: Consider front-loading ads in pre roll to minimize interruption of videos. | Fewer content interruptions mean happier users.
 For ad-supported channels: Consider not increasing the frequency of mid-roll ads as users progress through content. | From a business perspective this policy makes sense. Users who have invested time and attention into a show are a more captive ad audience. More importantly, from a user perspective it is very intrusive and frustrating to see more and more ads as a story is reaching its conclusion.  You will “win the battle, but lose the war” as users seek entertainment elsewhere.
 
-## Trick Play?
+## Trick Play
 
 Best Practice | Rationale / Benefits
 ---|---
-Stuff | Other stuff
+ | 
 
 
 ## Options menus
