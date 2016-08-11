@@ -28,7 +28,7 @@ Guides for core features of the Roku Platform
 * [Roku Ad Framework](/develop/guides/roku-ad-framework.md) - Monetizing Roku channels with the comprenhesive advertising framework
 * [Roku Billing](/develop/guides/roku-billing.md) - Monetizing Roku channels using the `ChannelStore` node and `roChannelStore` component
 * [Roku Web Services](/develop/guides/roku-web-services.md) - How to validate, credit, and cancel purchases using the Roku Web Services API
-* [Remote Control APIs](/develop/guides/remote-api-ecp.md) - How to implement remote functionality to Roku channels 
+* [Remote Control APIs](/develop/guides/remote-api-ecp.md) - How to implement remote functionality to Roku channels
 * [Deep Linking](/develop/guides/deep-linking.md) - How to implement deep linking for Search & Discovery
 * [Authentication and Linking](/develop/guides/auth-linking.md) - How to authenticate and link with third party services
 * [Packaging Channels](/develop/guides/packaging.md) - How to package a channel for publication
@@ -50,7 +50,7 @@ Details on supported formats and specifications on the Roku Platform
 
 * [Roku devices](/develop/specifications/roku-devices.md) - Overview of all Roku devices, past and present
 * [Video Streaming](/develop/specifications/video-streaming.md) - supported audio & video encodings
-* [Content Protection](/docs/specifications/content-protection.md) - supported DRM formats and specifications
+* [Content Protection](/develop/specifications/content-protection.md) - supported DRM formats and specifications
 * [Closed Captioning](/develop/specifications/closed-captioning.md) - supported caption formats and specifications
 * [Manifest file](/develop/specifications/manifest.md) - Manifest specifications and attributes
 
