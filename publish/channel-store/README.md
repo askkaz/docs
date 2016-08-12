@@ -1,6 +1,6 @@
 _Browse the Channel Store to find the best content on the Roku Platform_
 
-![Channel Store — Featured Channels](../../../../../Desktop/Pac-Man Screen Shot 8:12:16, 2.13 PM 2.png)
+![Channel Store — Featured Section](../../../../../Desktop/featured.png)
 
 ## Overview
 
@@ -8,11 +8,11 @@ The Roku Channel Store is where Roku users can search, discover, and download [p
 
 Sections:
 
-*   [What is the Channel Store?](#h.s6bsj59marbb)
-*   [Accessing the Channel Store](#h.mrnq5ow64k5)
-*   [Finding channels](#h.rt0pnijsmgeg)
-*   [Downloading/Removing channels](#h.tisq13iqzm0c)
-*   [Multiple Channel Stores](#h.is1pggqp23i6)
+*   [What is the Channel Store?](#what-is-the-channel-store)
+*   [Accessing the Channel Store](#accessing-the-channel-store)
+*   [Finding channels](#finding-channels)
+*   [Downloading/Removing channels](#downloading-removing-channels)
+*   [Multiple Channel Stores](#multiple-channel-stores)
 
 ## What is the Channel Store?
 
@@ -24,7 +24,7 @@ While the Roku Platform does include [private channels](https://www.google.com/u
 
 ## Accessing the Channel Store
 
-![Channel Store](../../../../../Desktop/Pac-Man_Screen_Shot_8_12_16__2_13_PM_1.png)
+![Channel Store screenshot](../../../../../Desktop/channel_store.png)
 
 The Channel Store can be found on the home screen of any Roku device by navigating to the “Streaming Channels” section in the menu on the left-hand side. Additionally, users based in the United States can access the Channel Store from the web by going to [channelstore.roku.com](https://www.google.com/url?q=https://channelstore.roku.com/browse&sa=D&ust=1471041006028000&usg=AFQjCNGfMldZqzlDEBVrWKb0-g_LlOIsoQ) from any browser.
 
@@ -34,7 +34,7 @@ Once in the Channel Store, there are a variety of ways for users to find a chann
 
 Users can also use the Roku Search feature in the left navigation bar of the Roku home screen (or the “Search channel” bar from the web) to find specific channels they’re looking for. Roku Search can also accept key terms, such as entering the words “news,” “sports,” or “weather” followed by a date.
 
-![Roku Search — News tag](../../../../../Downloads/RokuChannelStoreoverview/images/image04.jpg)
+![Roku Search — News](../../../../../Downloads/RokuChannelStoreoverview/images/image04.jpg)
 
 ## Downloading/Removing channels
 
@@ -42,7 +42,7 @@ Depending on how you’ve found the channel you’re looking for, it can be inst
 
 ### Installing via Roku Player
 
-![TuneIn Radio download page](../../../../../Desktop/Pac-Man Screen Shot 8:12:16, 2.14 PM.png)
+![TuneIn download page](../../../../../Desktop/tunein.png)
 
 When viewing a channel from your Roku Player, you’ll see the following information:
 
@@ -56,13 +56,13 @@ The page will also contain an “Add channel” button, which will automatically
 
 ### Installing via web store
 
-![Netflix download page — Web](../../../../../Desktop/screencapture-channelstore-roku-com-details-12-netflix-1470961459501.png)
+![Netflix download page — Web](../../../../../Desktop/netflix_web.png)
 
 Users in the US can also find similar information by searching for the channel on the [web store](https://www.google.com/url?q=https://channelstore.roku.com/browse&sa=D&ust=1471041006036000&usg=AFQjCNG-FP7ulubQodqMdal3he5XzDgh7g). As with the Roku Player, click the “+ Add Channel” button while logged in to your Roku account to add the channel to your Roku device.
 
 ### Installing via vanity code
 
-![HBO Go download page — Vanity code](../../../../../Desktop/Screen Shot 2016-08-12 at 2.21.53 PM.png)
+![HBO Go download page — Vanity code](../../../../../Desktop/vanity_code.png)
 
 Every channel has an access code that can be accessed from the web to quickly install a channel. To install a channel this way:
 
