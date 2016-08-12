@@ -24,7 +24,7 @@ Note these practices are guidelines, not requirements.  While channels that do n
 8. [Options menus](#options-menus)
 9. [In-app Purchasing](#in-app-purchasing)
 10. [Deep Linking](#deep-linking)
-11. [Channel Search](#channel-search)
+11. [Search](#search)
 12. [Channel Settings](#channel-settings)
 
 - - -
