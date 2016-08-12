@@ -17,7 +17,7 @@ These have been tested and/or are currently in-use. Other formats or encodings m
 **Sections:**
 
 * [Streaming Protocols](#streaming-protocols)
-* [Live Streaming / Live Video](#live-streaming-live-video)
+* [Live Streaming / Live Video](#live-streaming--live-video)
 * [Supported Video Formats](#supported-video-formats)
  * [Device Specific Features](#device-specific-features)
 * [Supported Audio Formats](#supported-audio-formats)
