@@ -13,19 +13,19 @@ Note these practices are guidelines, not requirements.  While channels that do n
 
 
 ### Sections
-0. [Safe Zones](#Safe-Zones)
+0. [Safe Zones](#safe-zones)
 1. [Navigation](#navigation)
 2. [Presentation](#presentation)
-3. [Content organization](#Content-organization)
-4. [Performance](#Performance)
-5. [Authorization and Authentication](#Authorization-and-Authentication)
-6. [Audio and Video Playback](#Audio-and-Video-Playback)
-7. [Trick Play](#Trick-Play)
-8. [Options menus](#Options-menus)
-9. [In-app Purchasing](#In-app-Purchasing)
-10. [Deep Linking](#Deep-Linking)
-11. [Channel Search](#Channel-Search)
-12. [Channel Settings](#Channel-Settings)
+3. [Content organization](#content-organization)
+4. [Performance](#performance)
+5. [Authorization and Authentication](#authorization-and-authentication)
+6. [Audio and Video Playback](#audio-and-video-playback)
+7. [Trick Play](#trick-play)
+8. [Options menus](#options-menus)
+9. [In-app Purchasing](#in-app-purchasing)
+10. [Deep Linking](#deep-linking)
+11. [Channel Search](#channel-search)
+12. [Channel Settings](#channel-settings)
 
 - - -
 
@@ -122,7 +122,7 @@ For ad-supported channels: Consider not increasing the frequency of mid-roll ads
 
 Best Practice | Rationale / Benefits
 ---|---
- | 
+ |
 
 
 ## Options menus
