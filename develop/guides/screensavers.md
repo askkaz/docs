@@ -6,12 +6,12 @@ _Entertain your viewers with custom screensavers_
 
 ### Overview
 
-Screensavers are simply channels designed to be customizable display screens that can be played in the background. Screensavers use the same features as any other channel to design a UI; all they require is a different entry point from the `main()`. With the release of OS 7.2, screensavers can now be created in SceneGraph for flexible and customizable UIs and animations.
+Screensavers are simply channels designed to be customizable display screens that can be played in the background. Screensavers use the same features as any other channel to design a UI; all they require is a different entry point from the `main()` function. With the release of OS 7.2, screensavers can now be created in SceneGraph for flexible and customizable UIs and animations.
 
 **Sections:**
-* Types of Screensavers
-* Screensaver Entry Points
-* Creating a Screensaver
+* [Types of Screensavers](#types-of-screensavers)
+* [Screensaver Entry Points](#screensaver-entry-points)
+* [Creating a Screensaver](#creating-a-screensaver)
 
 ---
 
@@ -37,7 +37,7 @@ Private screensavers are only displayed within a specific channel. These are com
 
 > :information_source: Private screensavers will not appear in the screensavers menu and will override the current screensaver being used when the channel is running.
 
-**Constraints:**
+### Screensaver Constraints:
 
 1.  SceneGraph based screensavers **cannot** play video
 2.  SceneGraph based screensavers **can** play audio
@@ -132,6 +132,6 @@ It’s also possible to create animations in screensavers using animation nodes.
 
 **Additional Resources**
 * Documentation on entry points and private screensavers: https://sdkdocs.roku.com/display/sdkdoc/Screensavers
-* Sample code for additional example screensaver apps: https://roku.app.box.com/s/zrs06qiz4ss4gs2bwt02pbi3cn5us1i4
+* Sample code for screensaver examples: https://roku.app.box.com/s/zrs06qiz4ss4gs2bwt02pbi3cn5us1i4
 
 > :information_source: Special thanks and credit to Jason Benjamin for the artwork used in these screensaver examples. **Jason** ([@PerfectHue](https://www.instagram.com/perfecthue)) is based in Los Angeles and is focused on crafting motion graphics, Virtual Reality, and interactive design experiences. You can find his body of work at [perfecthue.com](http://www.perfecthue.com).
