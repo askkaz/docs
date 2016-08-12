@@ -11,7 +11,7 @@ Sections:
 *   [What is the Channel Store?](#what-is-the-channel-store)
 *   [Accessing the Channel Store](#accessing-the-channel-store)
 *   [Finding channels](#finding-channels)
-*   [Downloading/Removing channels](#downloading/removing-channels)
+*   [Downloading channels](#downloading-channels)
 *   [Multiple Channel Stores](#multiple-channel-stores)
 
 ## What is the Channel Store?
@@ -36,7 +36,7 @@ Users can also use the Roku Search feature in the left navigation bar of the Rok
 
 ![Roku Search — News](../../images/roku_search_news.jpg)
 
-## Downloading/Removing channels
+## Downloading channels
 
 Depending on how you’ve found the channel you’re looking for, it can be installed in a variety of ways.
 
