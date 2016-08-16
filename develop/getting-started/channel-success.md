@@ -38,8 +38,8 @@ Guidelines to effectively test channel quality, detect regressions, and meet our
 
 * Test Accounts - Providing test credentials for Roku teams (Certification, Customer Service, PR, Marketing, Partner Success, Engineering)
 * QA Environment - Choosing the optimal testing process and setup
-* [Device Support](develop/specifications/roku-devices.md) - Using the Certification Checklist to test across devices and platforms
-* [Debug](develop/guides/debugging.md) - Tools and resources to identify and resolve bugs
+* [Device Support](/develop/specifications/roku-devices.md) - Using the Certification Checklist to test across devices and platforms
+* [Debug](/develop/guides/debugging.md) - Tools and resources to identify and resolve bugs
 * [Certification Checklist](https://sdkdocs.roku.com/download/attachments/3737121/Roku-Channel-Certification-Checklist_v2.0.xlsx) - The comprehensive list of overview and Requirements
 
 ## :tv: Publish
