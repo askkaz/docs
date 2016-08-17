@@ -1,15 +1,15 @@
 _Browse the Channel Store to find the best content on the Roku Platform_
 
-![Channel Store — Featured Channels](../../images/featured.png)
+![Screenshot of Channel Store Featured Channels section](../../images/featured.png)
 
 ## Overview
 
-The Roku Channel Store is where Roku users can search, discover, and download [public channels](https://www.google.com/url?q=https://github.com/rokudev/docs/blob/master/publish/channel-store/publishing.md&sa=D&ust=1471041006019000&usg=AFQjCNEhTlcO8V7mS1KpJkza1IWMbb5wnw) on the Roku Platform.
+The Roku Channel Store is where Roku users can search, discover, and download [public channels](https://github.com/rokudev/docs/blob/master/publish/channel-store/publishing.md) on the Roku Platform.
 
 Sections:
 
 *   [What is the Channel Store?](#what-is-the-channel-store)
-*   [Accessing the Channel Store](#accessing-the-channel-store)
+*   [Accessing the Channel Store](#accessing∏-the-channel-store)
 *   [Finding channels](#finding-channels)
 *   [Downloading channels](#downloading-channels)
 *   [Multiple Channel Stores](#multiple-channel-stores)
@@ -20,13 +20,13 @@ The Channel Store is the “home” for all public channels on the Roku Platform
 
 Essentially, the Channel Store can be thought of as the Roku app store.
 
-While the Roku Platform does include [private channels](https://www.google.com/url?q=https://github.com/rokudev/docs/blob/master/develop/guides/private-channels.md&sa=D&ust=1471041006025000&usg=AFQjCNGf0oCTX6vFlyPqfMqPKIoHRb5TzQ) that can’t be found in the Channel Store, it is important to note that all public channels have been [reviewed and certified](https://www.google.com/url?q=https://github.com/rokudev/docs/blob/master/publish/channel-store/certification.md&sa=D&ust=1471041006026000&usg=AFQjCNFyd7T1BCpwr7EYep4IpKO1CbAF3A) for quality and functionality. This means that users can expect a channel downloaded from the Channel Store to be of a higher standard than private channels.
+While the Roku Platform does include [private channels](https://github.com/rokudev/docs/blob/master/develop/guides/private-channels.md) that can’t be found in the Channel Store, it is important to note that all public channels have been [reviewed and certified](https://github.com/rokudev/docs/blob/master/publish/channel-store/certification.md) for quality and functionality. This means that users can expect a channel downloaded from the Channel Store to be of a higher standard than private channels.
 
 ## Accessing the Channel Store
 
-![Channel Store](../../images/channel_store.png)
+![Sceenshot of the Channel Store Streaming Channels button](../../images/channel_store.png)
 
-The Channel Store can be found on the home screen of any Roku device by navigating to the “Streaming Channels” section in the menu on the left-hand side. Additionally, users based in the United States can access the Channel Store from the web by going to [channelstore.roku.com](https://www.google.com/url?q=https://channelstore.roku.com/browse&sa=D&ust=1471041006028000&usg=AFQjCNGfMldZqzlDEBVrWKb0-g_LlOIsoQ) from any browser.
+The Channel Store can be found on the home screen of any Roku device by navigating to the “Streaming Channels” section in the menu on the left-hand side. Additionally, users based in the United States can access the Channel Store from the web by going to [channelstore.roku.com](https://channelstore.roku.com/browse) from any browser.
 
 ## Finding channels
 
@@ -34,7 +34,7 @@ Once in the Channel Store, there are a variety of ways for users to find a chann
 
 Users can also use the Roku Search feature in the left navigation bar of the Roku home screen (or the “Search channel” bar from the web) to find specific channels they’re looking for. Roku Search can also accept key terms, such as entering the words “news,” “sports,” or “weather” followed by a date.
 
-![Roku Search — News](../../images/roku_search_news.jpg)
+![Screenshot of Roku Search using news keywords](../../images/roku_search_news.jpg)
 
 ## Downloading channels
 
@@ -42,7 +42,7 @@ Depending on how you’ve found the channel you’re looking for, it can be inst
 
 ### Installing via Roku Player
 
-![TuneIn download page](../../images/tunein.png)
+![Screenshot of TuneIn download page from Roku Channel Store](../../images/tunein.png)
 
 When viewing a channel from your Roku Player, you’ll see the following information:
 
@@ -56,13 +56,13 @@ The page will also contain an “Add channel” button, which will automatically
 
 ### Installing via web store
 
-![Netflix download page — Web](../../images/netflix_web.png)
+![Screenshot of the Netflix download page from Roku Channel Store web UI](../../images/netflix_web.png)
 
-Users in the US can also find similar information by searching for the channel on the [web store](https://www.google.com/url?q=https://channelstore.roku.com/browse&sa=D&ust=1471041006036000&usg=AFQjCNG-FP7ulubQodqMdal3he5XzDgh7g). As with the Roku Player, click the “+ Add Channel” button while logged in to your Roku account to add the channel to your Roku device.
+Users in the US can also find similar information by searching for the channel on the [web store](https://channelstore.roku.com/browse). As with the Roku Player, click the “+ Add Channel” button while logged in to your Roku account to add the channel to your Roku device.
 
 ### Installing via vanity code
 
-![HBO Go download page — Vanity code](../../images/vanity_code.png)
+![Screenshot of HBO Go download page using web vanity code](../../images/vanity_code.png)
 
 Every channel has an access code that can be accessed from the web to quickly install a channel. To install a channel this way:
 
@@ -73,7 +73,7 @@ Every channel has an access code that can be accessed from the web to quickly in
 
 > :information_source: Note: When installing a channel from the web, you will need to update your Roku OS before the channel will appear in your home screen. To update your OS, launch your Roku device and navigate to Settings > System > System Update > Check Now.
 
-For more information on how to add or remove a channel via the Channel Store, read our [support article](https://www.google.com/url?q=https://support.roku.com/hc/en-us/articles/208756388-How-do-I-add-or-remove-channels-on-my-Roku-player-&sa=D&ust=1471041006040000&usg=AFQjCNGKwSzw0HBJl1jGkCYppBkmnA7VCQ).
+For more information on how to add or remove a channel via the Channel Store, read our [support article](https://support.roku.com/hc/en-us/articles/208756388-How-do-I-add-or-remove-channels-on-my-Roku-player-).
 
 ## Multiple Channel Stores
 
