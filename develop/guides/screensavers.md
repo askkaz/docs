@@ -17,41 +17,63 @@ Screensavers are simply channels designed to be customizable display screens tha
 
 ## Types of Screensavers
 
-### Pure Screensavers
+### Stand-alone Screensavers
 
-Pure screensavers are screensavers that only show up in the Screensaver Settings on Roku devices (i.e. they do not appear as a channel on the Roku home screen).
+Stand-alone screensavers are screensavers that only show up in the Screensaver Settings on Roku devices (i.e. they do not appear as a channel on the Roku home screen).
 
-Requirements for a pure screensaver:
-* Manifest entries:
-  * Use `screensaver_title` in place of `title`
-  * does not have any `mm_icon` references
-* Only uses a `RunScreenSaver()` entry point
+**Requirements for a stand-alone screensaver:**
+* manifest uses `screensaver_title` in place of `title`
+* manifest does not contain any `mm_icon` references
+* only uses a `RunScreenSaver()` entry point
 
-### Public Screensavers
+**Sample manifest:**
+```brightscript
+screensaver_title="Dog Screensaver"
+major_version=1
+minor_verstion-2
+build_version=150
+```
 
-Similar to traditional BrightScript screensavers, SceneGraph screensavers will also use the `RunScreenSaver` entry point with the option of including a `RunUserInterface` or `Main()` function. Screensavers that implement a `RunUserInterface` function also have the option to launch from the Home Screen in addition to the screensavers menu.
+### In-channel Screensavers
 
-### Private Screensavers
+In-channel screensavers are only displayed within a channel. These are commonly seen in music channels that want to use screensavers to show album cover art for songs playing.
 
-Private screensavers are only displayed within a specific channel. These are commonly seen in music channels that want to use screensavers to show album cover art for songs playing. Screensavers can be made private by adding `screensaver_private=1` to the manifest file.
+**Requirements for in-channel screensavers:**
+* manifest contains `mm_icon_focus_hd` attribute to show up as a channel on the homescreen
+* manifest contains `screensaver_private=1` attribute
+* channel uses the `RunScreenSaver` or `RunUserInterface` entry point in addition to the `Main()` function of the channel
 
-> :information_source: Private screensavers will not appear in the screensavers menu and will override the current screensaver being used when the channel is running.
+> :information_source: In-channel screensavers will not appear in the screensavers menu and will override the current screensaver being used when the channel is running.
+
+**Sample manifest:**
+```brightscript
+title="Dog Channel"
+major_version=1
+minor_verstion-2
+build_version=150
+
+mm_icon_focus_hd=pkg:/images/mm_icon_focus_hd.png
+
+screensaver_private=1
+```
 
 ### Screensaver Constraints:
 
-1.  SceneGraph based screensavers **cannot** play video
-2.  SceneGraph based screensavers **can** play audio
-3.  SceneGraph based screensavers **cannot** execute Channel Store APIs
+1. SceneGraph based screensavers **can** play audio
+2. SceneGraph based screensavers **cannot** play video
+3. SceneGraph based screensavers **cannot** execute Channel Store APIs
 
 ## Screensaver Entry Points
 
-When launching screensavers from the screensaver menu, the `RunScreenSaver` function will be called and it will run as a normal screensaver. When launching screensavers from the home screen, the `RunUserInterface` function will be called and it will behave as a normal channel allowing the use of any Brightscript or SceneGraph components and user input. Optionally, a `RunScreenSaverSettings` function can be used to modify settings such as colors, fonts, etc. The settings option will be displayed under the preview option in the screensavers menu.
+When launching screensavers from Screensaver Settings, the `RunScreenSaver` function will be called and it will run as a stand-alone screensaver. When launching screensavers from the home screen, the `RunUserInterface` or `main()` function will be called and it will behave as a normal channel allowing the use of any BrightScript or SceneGraph components and user input.
+
+Optionally, a `RunScreenSaverSettings` function can be used to implement settings such as changing colors, fonts, etc. The Settings option will be displayed under the Preview option in Screensaver Settings.
 
 ![Sample Channel Screenshot](../../images/screensaver-screenshot.png)
 
 ## Creating a Screensaver
 
-**BrightScript (Main.brs)** When creating a screensaver with SceneGraph, we will be using the `roSGScreen` component. This will allow us to draw straight to the scene with nodes that we create in our XML file. We start off by creating these components in our main BrightScript file.
+When creating a screensaver with SceneGraph, we will be using the `roSGScreen` component. This will allow us to draw straight to the scene with nodes that we create in our XML file. We start off by creating these components in the `main.brs` file.
 
 ```brightscript
 screen = CreateObject(“roSGScreen”)
@@ -71,7 +93,7 @@ Scene = screen.createScene(“screensaver”)
 screen.show()
 ```
 
-Implementing a while loop will also help keep track of data from screensavers. It’s also useful for continuously changing fields such as observers that constantly receive events to progress animations, color changes, background switches, etc.
+Implementing a `while` loop will also help keep track of data from screensavers. It’s also useful for continuously changing fields such as observers that constantly receive events to progress animations, color changes, background switches, etc.
 
 ```brightscript
 while(true)
@@ -128,10 +150,10 @@ It’s also possible to create animations in screensavers using animation nodes.
 </Animation>
 ```
 
- This is just one example of using SceneGraph to design a layout for screensavers. Follow the link below to find different examples of what can be done with screensavers.
+## Additional Resources
+This is just one example of using SceneGraph to design a layout for screensavers. Follow the links below to find different examples of what can be done with screensavers.
 
-**Additional Resources**
-* Documentation on entry points and private screensavers: https://sdkdocs.roku.com/display/sdkdoc/Screensavers
-* Sample code for screensaver examples: https://roku.app.box.com/s/zrs06qiz4ss4gs2bwt02pbi3cn5us1i4
+* SDK documentation: https://sdkdocs.roku.com/display/sdkdoc/Screensavers
+* Screensaver examples: https://roku.box.com/v/screensaver-examples
 
 > :information_source: Special thanks and credit to Jason Benjamin for the artwork used in these screensaver examples. **Jason** ([@PerfectHue](https://www.instagram.com/perfecthue)) is based in Los Angeles and is focused on crafting motion graphics, Virtual Reality, and interactive design experiences. You can find his body of work at [perfecthue.com](http://www.perfecthue.com).
