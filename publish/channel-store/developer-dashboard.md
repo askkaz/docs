@@ -105,4 +105,4 @@ Refer to the [Roku Web Services](/develop/guides/roku-web-services.md) guide for
 
 ## Developer Resources
 
-The Developer Dashboard also contains links to useful resources such as [Getting Started with developing on Roku](/develop/getting-started), [API references](sdkdocs.roku.com), and the Roku [Forum](https://forums.roku.com/), [Developer Blog](https://blog.roku.com/developer/), and [Roku Developer Twitter account](https://twitter.com/rokudev).
+The Developer Dashboard also contains links to useful resources such as [Getting Started with developing on Roku](/develop/getting-started), [API references](https://sdkdocs.roku.com), and the Roku [Forum](https://forums.roku.com/), [Developer Blog](https://blog.roku.com/developer/), and [Roku Developer Twitter account](https://twitter.com/rokudev).
