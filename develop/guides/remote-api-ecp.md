@@ -72,28 +72,8 @@ The external control services provided by ECP are included in a simple RESTful A
 | keyup/key | Equivalent to releasing the remote control key identified after the slash. This command is sent using an HTTP POST with no body. | curl -d '' http://ROKU_IP_HERE:8060/keyup/left
 | install/appID | Exits the current channel, and launches the Channel Store details screen of the channel identified by appID. You can follow the appID with a question mark and a list of launch parameters to be sent to the application as an associative array, and passed to the RunUserInterface() or Main() entry point. If launch parameters are given, the channel is launched immediately after the user installs the channel, and deep-links to content provided in the launch parameters. This command is sent using an HTTP POST with no body. Launches the details screen for the HBO GO channel on the given Roku device: | curl -d '' 'http://ROKU_IP_HERE:8060/install/8378?contentid=MV005011860000&MediaType=movie'|
 | launch/appID | Launches the channel identified by appID. You can follow the appID with a question mark and a list of URL parameters to be sent to the application as an associative array, and passed to the RunUserInterface() or Main() entry point. This command is sent using an HTTP POST with no body. The launch command should not be used to implement deep-linking to an uninstalled channel, because it will fail to launch uninstalled channels. Use the install command instead for uninstalled channels. |curl -d '' 'http://ROKU_IP_HERE:8060/launch/dev?streamformat=mp4&url=http%3A%2F%2Fvideo.ted.com%2Ftalks%2Fpodcast%2FVilayanurRamachandran_2007_480.mp4' |
-| query/device-info
-| Retrieves device information similar to that returned by roDeviceInfo. This command is accessed using an HTTP GET. | Request ```curl 'http://ROKU_IP_HERE:8060/query/device-info'```  |
-| query/active-app | Returns a child element named 'app' that identifies the active application, in the same format as 'query/apps'. If no application is active, such as when the user is in the homescreen, the element only contains "Roku". If a screensaver is active, a second element will be included containing "screensaver". If the screensaver is an application-provided or plug-in screensaver, the same information is provided as 'query/apps'. If the screensaver is active, but is not running (such as due to system limitations), the screensaver element contains "black". This command is accessed using an HTTP GET. The query/active-app command if the user is in the homescreen. | $ curl http://ROKU_IP_HERE:8060/query/active-app <active-app>
-  <app>Roku</app>
-</active-app>
-The query/active-app command if the user is in the homescreen but the default screensaver is active.
-$ curl http://ROKU_IP_HERE:8060/query/active-app
-<active-app>
-  <app>Roku</app>
-  <screensaver id="55545" type="ssvr" version="2.0.1">Default screensaver</screensaver>
-</active-app>
-The query/active-app command if the user is in the Netflix app.
-$ curl http://ROKU_IP_HERE:8060/query/active-app
-<active-app>
-  <app id="12" type="appl" version="4.1.218">Netflix</app>
-</active-app>
-The query/active-app command if the user is in the Roku Media Player with an active screensaver.
-$ curl http://ROKU_IP_HERE:8060/query/active-app
-<active-app>
-  <app id="2213" type="appl" version="4.1.1507">Roku Media Player</app>
-  <screensaver id="5533" type="ssvr" version="1.1.1">Roku Digital Clock</screensaver>
-</active-app> |
+| query/device-info | Retrieves device information similar to that returned by roDeviceInfo. This command is accessed using an HTTP GET. | Request ```curl 'http://ROKU_IP_HERE:8060/query/device-info'```  |
+| query/active-app | Returns a child element named 'app' that identifies the active application, in the same format as 'query/apps'. If no application is active, such as when the user is in the homescreen, the element only contains "Roku". If a screensaver is active, a second element will be included containing "screensaver". If the screensaver is an application-provided or plug-in screensaver, the same information is provided as 'query/apps'. If the screensaver is active, but is not running (such as due to system limitations), the screensaver element contains "black". This command is accessed using an HTTP GET. The query/active-app command if the user is in the homescreen. | $ curl http://ROKU_IP_HERE:8060/query/active-app <active-app> <app>Roku</app> </active-app> The query/active-app command if the user is in the homescreen but the default screensaver is active. $ curl http://ROKU_IP_HERE:8060/query/active-app <active-app> <app>Roku</app> <screensaver id="55545" type="ssvr" version="2.0.1">Default screensaver</screensaver> </active-app> The query/active-app command if the user is in the Netflix app. $ curl http://ROKU_IP_HERE:8060/query/active-app <active-app><app id="12" type="appl"version="4.1.218">Netflix</app></active-app> The query/active-app command if the user is in the Roku Media Player with an active screensaver. $ curl http://ROKU_IP_HERE:8060/query/active-app <active-app> <app id="2213" type="appl" version="4.1.1507">Roku Media Player</app><screensaver id="5533" type="ssvr" version="1.1.1">Roku Digital Clock</screensaver> </active-app> |
 | query/apps | Returns a map of all the channels installed on the Roku device paired with their application ID. This command is accessed using an HTTP GET. | curl http://192.168.1.134:8060/query/apps |
 | query/icon/appID | Returns an icon corresponding to the application identified by appID. The binary data with an identifying MIME-type header is returned. This command is accessed using an HTTP GET.
 | Example: GET /query/icon/12 curl 'http://ROKU_IP_HERE:8060/query/icon/12' Output: img.png |
