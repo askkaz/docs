@@ -1,23 +1,23 @@
 # Roku Remote API - External Control Protocol
 
-### Overview
+## Overview
 
 Whether you want to launch your channel content from Roku Ssearch or fancy controlling your Roku device remotely, you will need to learn how to use External Control Protocol (ECP). ECP enables a Roku device to be controlled over a local area network by providing a number of external control services. The Roku devices offering these external control services are discoverable using SSDP (Simple Service Discovery Protocol). ECP is a simple RESTful API that can be accessed by programs in virtually acny programming environment. The easiest way to test ECP is to use the cURL command to send POST/GET requests to your network connected Roku device.
 
-**Sections:**
+## Sections:
 * [What developers can do with the External Control Protocol](#what-developers-can-do-with-the-external-control-protocol)
-  * [Example Use Cases](#Remote-control-examples)
-  * [ECP Service commands with corresponding examples](#External-Control-Service-Commands)
+  * [Example Use Cases](#remote-control-examples)
+  * [ECP Service commands with corresponding examples](#external-control-service-commands)
 * [Implementing deep-linking in a Roku Channel](#implementing-deep-linking-in-a-roku-channel)
-* [Testing deep-linking](#Testing-deep-linking)
-* [ECP Security Implications](#ECP-security-implications)
-* [The DIAL (Discovery and Launch) protocol](#DIAL-protocol)
+* [Testing deep-linking](#testing-deep-linking)
+* [ECP Security Implications](#ecp-security-implications)
+* [The DIAL (Discovery and Launch) protocol](#dial-protocol)
 
 ### Useful Reference/Related Links
-[**Roku Search**](https://sdkdocs.roku.com/display/sdkdoc/Roku+Search)
-[**Channel Launch Parameters**](https://blog.roku.com/developer/2011/10/06/using-launch-parameters/)
-[**Channel Certification Checklist (Note: Deep Linking is on this list)**](https://sdkdocs.roku.com/download/attachments/3737121/Roku-Channel-Certification-Checklist_v2.0.xlsx?version=8&modificationDate=1467219288542&api=v2)
-[**Channel Samples**](https://sdkdocs.roku.com/display/sdkdoc/The+Roku+Channel+Developer+Program)
+- [**Roku Search**](https://sdkdocs.roku.com/display/sdkdoc/Roku+Search)
+- [**Channel Launch Parameters**](https://blog.roku.com/developer/2011/10/06/using-launch-parameters/)
+- [**Channel Certification Checklist (Note: Deep Linking is on this list)**](https://sdkdocs.roku.com/download/attachments/3737121/Roku-Channel-Certification-Checklist_v2.0.xlsx?version=8&modificationDate=1467219288542&api=v2)
+- [**Channel Samples**](https://sdkdocs.roku.com/display/sdkdoc/The+Roku+Channel+Developer+Program)
 
 ## What developers can do with the External Control Protocol
 
@@ -148,7 +148,7 @@ else
 end if
 ```
 
-### Testing Deep-Linking
+## Testing Deep-Linking
 Developers can test deep linking by invoking the appropriate ECP command from the command line. For example, the install command below launches the side loaded channel on the Roku device on IP address 192.168.1.114 and passes the content ID 13234.
 
 ```
@@ -185,10 +185,10 @@ Printable ASCII character code values can be transmitted "as-is" with the "Lit_"
   - VolumeMute
   - VolumeUp
 
-### Security Implications
+## Security Implications
 Note that with the launch command, anyone could write a program that could pass arbitrary parameters to your BrightScript channel. It is important that you validate any parameters that are passed to your program, and check what they may do to your program flow. The launch command can be very powerful to provide all kinds of interaction between network devices and your program. We envision catalogs browsed on the Internet that could instantly be watched in your channel on the Roku. The door is open to many creative uses. But if you prefer to shut this door on your channel, you can choose to not process any passed parameters. This will mean external control programs could launch your channel, but they could not change the program flow within your channel.
 
-### DIAL Protocol
+## DIAL Protocol
 The Roku platform supports the DIAL (Discovery and Launch) protocol. DIAL is a simple network protocol for discovering first screen devices and applications from a second screen (such as a mobile iOS or Android application,) and for launching first screen applications on the first screen device from the second screen app. In the context of the Roku platform, the first screen device is the Roku itself. A first screen application is a DIAL-aware channel installed on the Roku device. Complete details of the DIAL specification can be found here: http://www.dial-multiscreen.org/dial-protocol-specification.
 Many current Roku developers are familiar with the Roku external control protocol (ECP) which includes functionality similar to DIAL. An experienced Roku developer may thus fairly ask the question "why do I need DIAL?" One reason is that you may already have a DIAL based second screen implementation for use with other platforms. DIAL support on the Roku platform means that you don’t need to add a second protocol to your current application for discovery and launch.
 The Roku DIAL SDK contains detailed documentation of Roku DIAL support, as well as BrightScript, Android, and iOS sample applications.  In DIAL parlance, the BrightScript sample is the first screen application, and the Android and iOS apps are the second screen applications.  These sample applications should help you get started with your own Roku DIAL support.
