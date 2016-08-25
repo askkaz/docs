@@ -5,20 +5,21 @@
 Whether you want to launch your channel content from Roku Ssearch or fancy controlling your Roku device remotely, you will need to learn how to use External Control Protocol (ECP). ECP enables a Roku device to be controlled over a local area network by providing a number of external control services. The Roku devices offering these external control services are discoverable using SSDP (Simple Service Discovery Protocol). ECP is a simple RESTful API that can be accessed by programs in virtually acny programming environment. The easiest way to test ECP is to use the cURL command to send POST/GET requests to your network connected Roku device.
 
 ## Sections:
-* [What developers can do with the External Control Protocol](#what-developers-can-do-with-the-external-control-protocol)
-  * [Example Use Cases](#remote-control-examples)
-  * [ECP Service commands with corresponding examples](#external-control-service-commands)
-* [Implementing deep-linking in a Roku Channel](#implementing-deep-linking-in-a-roku-channel)
-* [Testing deep-linking](#testing-deep-linking)
-* [ECP Security Implications](#ecp-security-implications)
-* [The DIAL (Discovery and Launch) protocol](#dial-protocol)
+* [**What developers can do with the External Control Protocol**](#what-developers-can-do-with-the-external-control-protocol)
+  * [**Example Use Cases**](#remote-control-examples)
+  * [**ECP Service commands with corresponding examples**](#external-control-service-commands)
+* [**Implementing deep-linking in a Roku Channel**](#implementing-deep-linking-in-a-roku-channel)
+* [**Testing deep-linking**](#testing-deep-linking)
+* [**ECP Security Implications**](#ecp-security-implications)
+* [**The DIAL (Discovery and Launch) protocol**](#dial-protocol)
 
 ### Useful Reference/Related Links
 - [**Roku Search**](https://sdkdocs.roku.com/display/sdkdoc/Roku+Search)
 - [**Channel Launch Parameters**](https://blog.roku.com/developer/2011/10/06/using-launch-parameters/)
 - [**Channel Certification Checklist (Note: Deep Linking is on this list)**](https://sdkdocs.roku.com/download/attachments/3737121/Roku-Channel-Certification-Checklist_v2.0.xlsx?version=8&modificationDate=1467219288542&api=v2)
 - [**Channel Samples**](https://sdkdocs.roku.com/display/sdkdoc/The+Roku+Channel+Developer+Program)
-
+
+
 ## What developers can do with the External Control Protocol
 
 ECP allows you to implement your out-of-the-box ideas with by giving you the ability to access Roku devices from any network connected device. Here are several of the most common use cases for ECP. These examples should serve as inspiration for what you might want to use ECP for in your channel.
@@ -28,7 +29,7 @@ There have been many creative and successful applications using ECP by third-par
 
 ![Mr Robot](/images/RokieApp.png)
 
-#### Remote Control Examples
+### Remote Control Examples
 The SDK also includes a couple of Java applications that use ECP to turn your Android device into a remote control. Also included is the Rokie app download page if you want to take a look.
 [**Rokie iPhone/iPod remote app**](https://itunes.apple.com/us/app/rokie-remote-for-roku-touchpad/id1016562846?mt=8)
 [**Sample Android remote control**](http://sourceforge.net/projects/rokusdkexamples/files/ecp_client.zip/download)
