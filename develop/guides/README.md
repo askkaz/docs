@@ -19,4 +19,5 @@ We've pulled together standalone guides that show the core concepts for building
 * [Channel Packaging](packaging.md)
 * [Debugging](debugging.md)
 * [Private channels](private-channels.md)
+* [Performance](performance.md)
 * [Examples](examples.md)
