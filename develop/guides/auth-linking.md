@@ -5,7 +5,7 @@
 This document describes the typical flow and API used for registering and linking a device to a video service. The primary and recommended method for linking a device involves 3 main steps:
 
 - (1) Generating a short on-screen registration code on the Roku device.
-- (2) Having the user link the device by entering the registration code on the  the provider website.
+- (2) Having the user link the device by entering the registration code on the provider website.
 - (3) Once the device detects that registration is complete, it displays a congratulations screen and allows the user access to the video service.
 
 This is known as the "rendezvous" style of registration.
@@ -22,6 +22,9 @@ The steps are linked below, with each number representing one request/response t
 - (3b) The next time the device makes a "link" query, the server responds with a permanent token that can be used to access the user's account.
 
 All subsequent API requests use this token to uniquely identify the customer and device. A request can be made as HTTP GET with values in parameters, or HTTP POST with values in the body of the request, for example, as XML or JSON.
+
+![Private channel channel properties screenshot](../../images/cd-regist-screen-1.jpg)
+![Private channel channel properties screenshot](../../images/cd-regist-screen-2.jpg)
 
 ## Resources
 
