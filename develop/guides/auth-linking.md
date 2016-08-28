@@ -60,16 +60,20 @@ This transaction is used to check the registration progress to see if the user h
 
 **Link Request**
 
- `<linkAccount>
+ ```
+ <linkAccount>
  <regCode> (current registration code from PreRegistration request) </regCode>
  <deviceID> (unique id/serial number for the device) </deviceID>
  <deviceTypeID> (opaque string identifying device type) </deviceTypeID>
- </linkAccount>`
+ </linkAccount>
+ ```
 
 **Intermediate Response**
- `<result>
+ ```
+ <result>
  <status> incomplete </status>
- </result>`
+ </result>
+ ```
 
  The device linking request may fail for several reasons, such as:
 
@@ -88,9 +92,11 @@ channel which causes the stored device token to be discarded.
 
 **Final Response**
 
- `<result>
+ ```
+ <result>
  <status> success/failure </status>
  <deviceToken> (opaque string to identify account for future requests) </deviceToken>
  <customerId> (optional customer ID if required by partner) </customerId>
  <creationTime> (optional ISO8601 date/time value) </creationTime>
- </result>`
+ </result>
+ ```
