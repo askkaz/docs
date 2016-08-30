@@ -13,6 +13,7 @@ Testing Roku Channels involves using a debug console and access to a variety of 
 * [BrightScript debug console commands](#brightscript-debug-console-port-8085-commands)
 * [SceneGraph debug ports](#scenegraph-debug-ports)
 * [SceneGraph debug server commands](#scenegraph-debug-server-port-8080-commands)
+* [r2d2 debugging]
 
 ---
 
@@ -85,5 +86,6 @@ Because SceneGraph applications run on their own thread, and can also launch add
 | `sgnodes all` | Prints every existing node created by the currently running channel
 | `sgnodes roots` | Prints every existing node without a parent created by the currently running channel. The existence of these unparented nodes means they are being kept alive by direct BrightScript references. These could be in variables local to a function, arrays, or associative arrays, including a component global `m` or an associative array field of a node.
 | `sgnodes node_ID` | Prints nodes with an id field set to node_ID, except it bypasses all the hierarchy and rules, and just runs straight down the whole list in the order of node creation. It will list multiple nodes if there are several that match.
+| `r2d2_bitmaps` | Prints a list of assets loaded into texture memory and the amount of free, used, and maximum available memory on your device, respectively. | 
 
 > :information_source: These commands are similar to the getAll() , getRoots() ,  getRootsMeta(), and getAllMeta() [ifSGNodeChildren](https://sdkdocs.roku.com/display/sdkdoc/ifSGNodeChildren) methods, which can be called on any SceneGraph node.
