@@ -81,6 +81,10 @@ end function
 
 * * *
 
+## Debugging Performance
+
+You can check your texture memory usage by telnetting to port 8080 on your Roku device and running the command “r2d2_bitmaps”. You can check your texture memory usage by telnetting to port 8080 on your Roku device and running the command “r2d2_bitmaps”. This command will output a list of memory addresses representing the assets loaded into texture memory, their width and height, as well as their size in bytes. At the bottom, it also shows the available memory you have on your device left, the amount used, and the amount that the device has in total.
+
 ## Frequently Asked (Performance) Questions
 
 **Can I have a background video playing in my channel navigation screen?**
