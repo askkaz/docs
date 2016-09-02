@@ -25,7 +25,7 @@ Overview of channel design, navigation, and navigation flows with examples of us
 
 * [Best Practices for User Experience](/design/design-guidelines.md) - Covering design guidelines, navigation, channel layout, sign up flows, and playback
 * [Design Resources](/design/design-resources.md) - collection of samples / Downloads / Tools
-* [User Interface](/develop/channel-development/scenegraph-ui.md) - Building UI with XML (SceneGraph) and understanding Project Titan layouts
+* [User Interface](/develop/channel-development/scenegraph-ui.md) - Building UI with XML (SceneGraph) and understanding  layouts
 
 ## 🛠 Develop
 The fundamentals for developing a Roku channel, understanding our application framework, and integrating platform features for monetizing and growing an audience
