@@ -83,7 +83,10 @@ end function
 
 ## Debugging Texture Memory Performance
 
-You can check your texture memory usage by telnetting to port 8080 on your Roku device and running the command “r2d2_bitmaps”. This command will output a list of memory addresses representing the assets loaded into texture memory, their width and height, as well as their size in bytes. At the bottom, it also shows the available memory you have on your device left, the amount used, and the amount that the device has in total.
+Using r2d2_bitmaps to check the amount of texture memory available:
+![r2d2_bitmaps](https://raw.githubusercontent.com/rokudev/docs/master/images/r2d2_bitmaps.png "r2d2_bitmaps")
+
+You can check your texture memory usage by telnetting to port 8080 on your Roku device and running the command “r2d2_bitmaps”. This command will output a list of memory addresses representing the assets loaded into texture memory, their width and height, as well as their size in bytes. At the bottom, it also shows the available memory you have on your device left, the amount used, and the amount that the device has in total. If your channel uses multiple high resolution images (e.g. more than two 1920 x 1080 images), you will notice that the available memory will hit a peak somewhere less than the max amount and keep fluctuating between values as the texture memory manager tries offloading assets and reloading them back in to manage memory. Make sure to use the performance techniques listed in this guide so that your channel doesn't run into these problems!
 
 ## Frequently Asked (Performance) Questions
 
