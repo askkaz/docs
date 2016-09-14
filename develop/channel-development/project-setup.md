@@ -7,11 +7,13 @@ All Roku channels developed using SceneGraph must contain the following director
 * `images` directory
 * `manifest`
 
+In a new project, create a folder for `source`, `components`, and `images`. You can also choose to create a blank file for `manifest` now or as you get to that section below.
+
 ## Source Directory
 
-The source directory contains BrightScript code for the main application’s execution thread with the extension `.brs`. Since applications including SceneGraph scenes allow BrightScript code to either be embedded in, or used by, an XML component file in a `<script>` element, for many SceneGraph applications this directory will only contain a `main.brs` file to start the application. The `main.brs` file only need have enough BrightScript code to start the application by creating and displaying the scene specified in the SceneGraph scene.
+The source directory contains BrightScript code for the main application’s execution thread with the extension `.brs`. Most applications will have separate files for SceneGraph scenes and background logic in the `components` folder. The `main.brs` file only needs to create and display `roSGScreen`, used to display the contents of a SceneGraph node tree.
 
-The following shows a `main.brs` file that starts the application by creating and showing the scene defined in the SceneGraph scene named `VideoExample` (the `VideoExample` scene is defined in an XML component file in the components directory in the next section).
+For this example, create a new file in `source` named `main.brs` using the code below. We'll call the Scene `VideoExample`.
 
 ```brightscript
 sub Main()
@@ -39,39 +41,42 @@ The components directory contains all the XML component and associated BrightScr
 
 Each XML component file contains a single `<component>` element that contains a specific SceneGraph node/element tree defining that component. When the channel is launched, all the files with extension `.xml` in the `components` directory are loaded and added to the available types of nodes that can be created.
 
+The next part of this guide will cover the contents of this folder so we'll leave it empty for now.
+
 ## Images Directory
 
-Any graphic image files to be included in the application package are stored in the `images` directory. At a minimum, the `images` directory must contain the `mm_icon_focus_hd` image and a `splash_screen_FHD` graphic described in the following section.
+Any graphic image files to be included in the application package are stored in the `images` directory. At a minimum, the `images` directory must contain the `mm_icon_focus_hd` image and a `splash_screen_fhd` graphic described in the following section.
+
+For this example, you can save the following images and add them to your `images` folder:
+* [channel-poster.png](https://raw.githubusercontent.com/rokudev/docs/master/images/channel-poster.png)
+* [channel-splash.png](https://raw.githubusercontent.com/rokudev/docs/master/images/channel-splash.png)
 
 ## Manifest File
 
-At the root level there must be a file named `manifest` which contains attributes for the application. The attributes specified in the `manifest` include the name and version number of the application, the application image to be used on the main menu, etc.
+At the root level there must be a file named `manifest` which contains attributes for the application. The attributes specified in the `manifest` include the name and version number of the application, the artwork image to be used on the home screen, and many more.
 
-* Each attribute is on a separate line, and has the form `name=value`
-* Each `name=value` pair must end with a newline character, or it may not be parsed by the firmware
-* The last line must end with a newline character
-* Empty lines are ignored
-* Lines beginning with a '#' (number sign) are comment lines and are ignored
-* The various `graphic_file_URI` field values are used to specify a graphic that allows a user to select your application and a "splash" screen that appears as the application is loading.
-* All graphics files specified in the manifest file should be included in the `images` directory.
-* The URI to set the path to the files should use the `pkg:` resource prefix, such as `pkg:/images/splash_sd.jpg`.
+> :information_source: See [Roku Channel Manifest](/develop/specifications/manifest.md) for more details.
 
 The following fields are required:
+* title
+* major_version
+* minor_version
+* build_version
+* mm_icon_focus_hd
+* splash_screen_fhd
+
+If you haven't created a manifest file yet, create one now at the root level of your project and fill out the required fields. It should look similar to this:
 
 ```brightscript
-##  Channel Details
-title=application_title
-major_version=major_version_number
-minor_version=minor_version_number
-build_version=build_version_number
+title=VideoExample
+major_version=1
+minor_version=0
+build_version=1
 
-##  Main Menu Icon HD: 290x218px
-mm_icon_focus_hd=HD_focus_graphic_file_URI
-
-### FHD (1920x1080px) Splash Screen
-splash_screen_fhd=FHD_splash_screen_graphic_file_URI
+mm_icon_focus_hd=pkg:/images/channel-poster.png
+splash_screen_fhd=pkg:/images/splash-screen.png
 ```
 
-## Building a UI using SceneGraph
+## Parsing an XML Feed
 
-Proceed to the next section to get started with [Building a UI using SceneGraph](/develop/channel-development/scenegraph-ui.md).
+Proceed to the next section to get started with [Parsing an XML Feed](/develop/channel-development/parsing-feed.md).
