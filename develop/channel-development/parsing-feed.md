@@ -2,7 +2,9 @@
 
 ## Overview
 
-This guide covers how to parse an XML content feed using a task node in SceneGraph. Parsing an XML feed is one of the most common ways to retrieve content for Roku channels. This guide will be using an example feed supplied by Roku.
+This guide covers how to parse an XML content feed using a task node in SceneGraph. This is a continuation from [Project Setup](/develop/channel-development/project-setup.md) of the [Channel Development Guide](/develop/channel-development).
+
+Parsing an XML feed is one of the most common ways to retrieve content for Roku channels. This guide will be using this [sample MRSS feed](http://api.delvenetworks.com/rest/organizations/59021fabe3b645968e382ac726cd6c7b/channels/1cfd09ab38e54f48be8498e0249f5c83/media.rss).
 
 **Steps:**
 
@@ -14,7 +16,7 @@ This guide covers how to parse an XML content feed using a task node in SceneGra
 
 ## 1. Create Task Node
 
-First create a new XML file in the `components` folder called `FeedParser`. This component extends from the `Task` node class. Also create an interface field called `content` to store each item in the parsed XML feed.
+First create a new XML file in the `components` folder called `FeedParser`. This component extends from the `Task` node class. Also create an interface field called `content` that will be used to store each content item from the parsed XML feed.
 
 ```xml
 <component name="FeedParser" extends="Task">
@@ -26,31 +28,32 @@ First create a new XML file in the `components` folder called `FeedParser`. This
 
 ## 2. Retrieve XML content feed
 
-Next, make a curl request to the feed and store its response.
+Next, we need to retrieve the feed and convert it to a string so that it can be parsed.
 
 ```brightscript
-Function GetApiArray() 'This function makes a curl request and parses through all its content
-    url = CreateObject("roUrlTransfer") ' Curl command object
+Function GetApiArray() 'This function retrieves and parses the feed and stores each content item in a ContentNode
+    url = CreateObject("roUrlTransfer") 'component used to transfer data to/from remote servers
     url.SetUrl("http://api.delvenetworks.com/rest/organizations/59021fabe3b645968e382ac726cd6c7b/channels/1cfd09ab38e54f48be8498e0249f5c83/media.rss")
-    rsp = url.GetToString() 'Turns response into a string
+    rsp = url.GetToString() 'convert response into a string
+    ...
 ```
 
 ## 3. Parse XML content feed
 
-Then we have to parse the response string using the `ParseXML` method. `ParseXML` is a function that will try to parse the response string on the `XMLElement` or return `invalid` if it fails.
+Next, we have to parse the response string using the `ParseXML` method. `ParseXML` is a function that will try to parse the response string on the `XMLElement` or return `invalid` if it fails.
 
 ```brightscript
-Function ParseXML(str As String) As dynamic 'Takes in response from curl request
-    if str = invalid return invalid  'if the response is invalid it returns invalid
+Function ParseXML(str As String) As dynamic 'Takes in the content feed as a string
+    if str = invalid return invalid  'if the response is invalid, return invalid
     xml = CreateObject("roXMLElement") '
-    if not xml.Parse(str) return invalid 'If the response cannot be parsed, it returns invalid
+    if not xml.Parse(str) return invalid 'If the string cannot be parsed, return invalid
     return xml 'returns parsed XML if not invalid
 End Function
 ```
 
 ### Manually parse feed if ParseXML() is invalid
 
-In a fallback case when it returns `invalid`, the response will have to be parsed manually.
+In a fallback case when `invalid` is returned, the response string will have to be parsed manually. The following code is specific to the schema of the sample feed used in this example. Your own content feed may vary.
 
 ```brightscript
 responseXML = ParseXML(rsp) 'Roku includes it's own XML parsing method
@@ -89,8 +92,6 @@ end for
 return result ' Returns the array
 End Function
 ```
-
-_Note that this may change based on the format of the response._
 
 ## 4. Setup Task thread
 
