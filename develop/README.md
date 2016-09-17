@@ -11,14 +11,14 @@ Getting started with developing on the Roku Platform
 * [Developer Setup Guide](/develop/getting-started/setup-guide.md) - How to enable Developer Settings
 * [Hello World](/develop/getting-started/hello-world.md) - A simple Hello World tutorial
 
-## [Channel Development Guide](/develop/channel-development)
+## [SDK Development Guide](/develop/sdk-development)
 
 Key concepts to building your first Roku Channel
 
-* [Setting up a project](/develop/channel-development/project-setup.md) - How to setup a project with the required directories, files, and assets.
-* [Parsing an XML feed](/develop/channel-development/parsing-feed.md) - How to parse a content feed and retrieve videos, titles, descriptions, etc.
-* [Building a user interface in SceneGraph](/develop/channel-development/scenegraph-ui.md) - How to build a simple grid layout using the `RowList` component
-* [Playing video](/develop/channel-development/video-playback.md) - How to setup and play video in SceneGraph
+* [Setting up a project](/develop/sdk-development/project-setup.md) - How to setup a project with the required directories, files, and assets.
+* [Parsing an XML feed](/develop/sdk-development/parsing-feed.md) - How to parse a content feed and retrieve videos, titles, descriptions, etc.
+* [Building a user interface in SceneGraph](/develop/sdk-development/scenegraph-ui.md) - How to build a simple grid layout using the `RowList` component
+* [Playing video](/develop/sdk-development/video-playback.md) - How to setup and play video in SceneGraph
 
 ## [Developer Guides and Tutorials](/develop/guides)
 

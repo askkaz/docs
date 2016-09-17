@@ -79,4 +79,4 @@ splash_screen_fhd=pkg:/images/splash-screen.png
 
 ## Parsing an XML Feed
 
-Proceed to the next section to get started with [Parsing an XML Feed](/develop/channel-development/parsing-feed.md).
+Proceed to the next section to get started with [Parsing an XML Feed](/develop/sdk-development/parsing-feed.md).

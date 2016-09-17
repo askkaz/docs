@@ -1,6 +1,6 @@
 # Building a User Interface with Roku SceneGraph
 
-This guide is a continuation from [parsing an XML feed](/develop/channel-development/parsing-feed.md). In this guide we'll cover building a basic grid layout using SceneGraph.
+This guide is a continuation from [parsing an XML feed](/develop/sdk-development/parsing-feed.md). In this guide we'll cover building a basic grid layout using SceneGraph.
 
 ![](../../images/ch-dev-guide-example-ui.jpg)
 
@@ -168,7 +168,7 @@ m.LoadTask = CreateObject("roSGNode", "SampleTaskNode") 'Create XML Parsing task
 m.LoadTask.control = "RUN" 'Run the task node
 ```
 
-We can now set an observer that calls a function when a field is changed. In the [previous guide](/develop/channel-development/parsing-feed.md), we created an interface field named `content` to store our content node. We can now assign it to our `RowList` from our `HomeScene`. In the line below, an observer is set to `LoadTask` to watch when the content field changes (after the task node has assigned the content node containing the XML to it).
+We can now set an observer that calls a function when a field is changed. In the [previous guide](/develop/sdk-development/parsing-feed.md), we created an interface field named `content` to store our content node. We can now assign it to our `RowList` from our `HomeScene`. In the line below, an observer is set to `LoadTask` to watch when the content field changes (after the task node has assigned the content node containing the XML to it).
 
 ```brightscript
 m.LoadTask.observeField("content","rowListContentChanged")
@@ -212,4 +212,4 @@ Finally, we have our finished UI:
 
 ## Adding Video
 
-Proceed to the next section for a guide on [adding video](/develop/channel-development/video-playback.md) to this project.
+Proceed to the next section for [adding video playback](/develop/sdk-development/video-playback.md) to this project.
