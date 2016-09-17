@@ -11,19 +11,19 @@ The guide covers some key concepts to building your first Roku channel. Before p
 
 This guide is composed of the following sections:
 
-### 1. [Setting up a project](/develop/channel-development/project-setup.md)
+### 1. [Setting up a project](/develop/sdk-development/project-setup.md)
 
 How to setup a project with the required directories, files, and assets.
 
-### 2. [Parsing an XML feed](/develop/channel-development/parsing-feed.md)
+### 2. [Parsing an XML feed](/develop/sdk-development/parsing-feed.md)
 
 How to parse a content feed and retrieve videos, titles, descriptions, etc.
 
-### 3. [Building a user interface in SceneGraph](/develop/channel-development/scenegraph-ui.md)
+### 3. [Building a user interface in SceneGraph](/develop/sdk-development/scenegraph-ui.md)
 
 How to build a simple grid layout using the `RowList` component.
 
-### 4. [Playing video](/develop/channel-development/video-playback.md)
+### 4. [Playing video](/develop/sdk-development/video-playback.md)
 
 How to setup and play video in SceneGraph.
 
