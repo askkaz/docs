@@ -31,7 +31,7 @@ Getting started with developing on the Roku Platform
 ## [Develop](/develop/)
 
 * [Getting Started](/develop/getting-started/)
-* [Channel Development Guide](/develop/channel-development/)
+* [SDK Development Guide](/develop/sdk-development/)
 * [Developer Guides and Tutorials](/develop/guides/)
  * [Examples Gallery](/develop/guides/examples.md)
 * [SDK Reference](/develop/sdk-documentation)

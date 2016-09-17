@@ -1,6 +1,6 @@
 # Playing Video in SceneGraph
 
-This guide demonstrates adding video to a SceneGraph project which is a continuation from [Building a SceneGraph UI](/develop/channel-development/scenegraph-ui.md). This guide uses the same example project.
+This guide demonstrates adding video to a SceneGraph project which is a continuation from [Building a UI in SceneGraph](/develop/sdk-development/scenegraph-ui.md). This guide will use the same example project.
 
 The main steps include:
 
@@ -13,9 +13,13 @@ The main steps include:
 * [Content Node](https://sdkdocs.roku.com/display/sdkdoc/ContentNode)
 * [OnKeyEvent()](https://sdkdocs.roku.com/pages/viewpage.action?pageId=1608547)
 
+---
+
 ## 1. Create a video node
 
-To make Video in SceneGraph we will add our video node inside our HomeScene.xml file in your components folder.
+Video playback in SceneGraph is done using the [Video Node](https://sdkdocs.roku.com/display/sdkdoc/Video).
+
+In the `components` folder, open the `HomeScene.xml` file and the following code:
 
 ```brightscript
 <children>
@@ -29,7 +33,7 @@ To make Video in SceneGraph we will add our video node inside our HomeScene.xml 
 </children>
 ```
 
-> :information_source: This is done at the bottom of the `.xml` file because we want the video to show in front of all our other nodes. A reference to the fields set into the video node can be found [here](https://sdkdocs.roku.com/display/sdkdoc/Video).
+> :information_source: This is done at the end of the `.xml` file because we want the video to show in front of all our other nodes.
 
 ## 2. Setup the video content
 
@@ -40,7 +44,7 @@ m.Video = m.top.findNode(“Video”)
 m.videoContent = createObject(“roSGNode”, “ContentNode”)
 ```
 
-After doing this, we also create a Content Node that we can assign to our Video Node later on.
+After doing this, we also create a Content Node (containing the meta-data for a piece of content) that we can assign to our Video Node later on.
 
 Next, we set an observer function that waits for an item to be selected in our RowList so that it can set the content of our Video Node to the video content that we select from our `RowList`. The following observer calls the function `playVideo()` when an item is selected in our `RowList`.
 
@@ -48,7 +52,7 @@ Next, we set an observer function that waits for an item to be selected in our R
 m.RowList.observerField(“rowItemSelected”, “playVideo”)
 ```
 
-The function `playVideo()` takes our content node named m.videoContent that we created earlier and assigns our video stream (mp4) to the field `videoContent.url`. It’s also important to set the `streamFormat` to one that matches the feed. In our case, we will set `m.videoContent.streamFormat` to `mp4`
+The function `playVideo()` takes our content node named `m.videoContent` that we created earlier and assigns the video stream (mp4) to the field `videoContent.url`. It’s also important to set the `streamFormat` to one that matches the feed. In our case, we will set `m.videoContent.streamFormat` to `mp4`.
 
 ```brightscript
 Sub playVideo()
@@ -62,11 +66,11 @@ Sub playVideo()
 End Sub
 ```
 
-After, all that’s left is to play the video and make it visible.
+Now when an item in the `RowList` is selected, it will show a Video Node and play the content.
 
 ## 3. Map the back button
 
-To make sure that the user is able to navigate back to the `RowList`, we have to set a function that maps our Back button to leave the video. To do this we will use the `onKeyEvent()` function. In this function, we hide the video and stop it from playing when the back button on the controller is pressed so that we can go back to the `RowList`.
+Lastly, to make sure the user is able to navigate back to the UI, we need a function that maps the Back button on the remote to leave the video. To do this, we'll create a function responding to an `onKeyEvent()` back button press. With the function below, the video will stop playing and be hidden when the back button is pressed and return to the UI.
 
 ```brightscript
 Function onKeyEvent(key as String, press as Boolean) as Boolean ‘Maps back button to leave video
