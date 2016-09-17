@@ -1,4 +1,4 @@
-# Channel Development Guide
+# SDK Development Guide
 
 ![](../../images/ch-dev-guide-example-ui.jpg)
 
