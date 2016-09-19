@@ -1,4 +1,4 @@
-# Screensavers on Roku
+# Screensavers for Roku OS
 
 _Entertain your viewers with custom screensavers_
 
