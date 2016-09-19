@@ -2,7 +2,7 @@
 
 ## Overview
 
-Publishing on the Roku Channel Store requires several core items — such as source code, images, and fonts — to be “packaged.” This enables developers to securely publish channels while keeping all intellectual property safely encrypted. The process of “packaging a channel” uses cryptographic hardware built into Roku devices and creates an encrypted package that can be easily and securely distributed on Roku devices.
+Publishing on the Roku Channel Store requires several core items — such as source code, images, and fonts — to be "packaged." This enables developers to securely publish channels while keeping all intellectual property safely encrypted. The process of “packaging a channel” uses cryptographic hardware built into Roku devices and creates an encrypted package that can be easily and securely distributed on Roku devices.
 
 **Sections:**
 

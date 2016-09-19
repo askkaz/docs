@@ -2,7 +2,11 @@
 
 ## Overview
 
-Whether you want to launch your channel content from Roku Ssearch or fancy controlling your Roku device remotely, you will need to learn how to use External Control Protocol (ECP). ECP enables a Roku device to be controlled over a local area network by providing a number of external control services. The Roku devices offering these external control services are discoverable using SSDP (Simple Service Discovery Protocol). ECP is a simple RESTful API that can be accessed by programs in virtually acny programming environment. The easiest way to test ECP is to use the cURL command to send POST/GET requests to your network connected Roku device.
+Whether you want to launch your channel content from Roku Search or fancy controlling your Roku device remotely, you will need to learn how to use External Control Protocol (ECP). 
+
+ECP enables a Roku device to be controlled over a local area network by providing a number of external control services. The Roku devices offering these external control services are discoverable using SSDP (Simple Service Discovery Protocol).
+
+ECP is a simple RESTful API that can be accessed by programs in virtually acny programming environment. The easiest way to test ECP is to use the cURL command to send POST/GET requests to your network connected Roku device.
 
 ## Sections:
 * [**What developers can do with the External Control Protocol**](#what-developers-can-do-with-the-external-control-protocol)
