@@ -6,7 +6,7 @@ Sections:
 * [Roku Remote Webpage](#roku-remote-webpage)
 * [Deep link testing](#deep-link-testing)
 * [Stream Testing Tool](#stream-testing-tool)
-* [Roku Eclipse Plugin](#roku-plugin-for-eclipse)
+* [Roku Plugin for Eclipse](#roku-plugin-for-eclipse-ide)
 
 - - -
 
