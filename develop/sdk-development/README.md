@@ -15,17 +15,14 @@ This guide is composed of the following sections:
 
 How to setup a project with the required directories, files, and assets.
 
-### 2. [Parsing an XML feed](/develop/sdk-development/parsing-feed.md)
+### 2. [Parsing an XML content feed](/develop/sdk-development/parsing-feed.md)
 
 How to parse a content feed and retrieve videos, titles, descriptions, etc.
 
 ### 3. [Building a user interface in SceneGraph](/develop/sdk-development/scenegraph-ui.md)
 
-How to build a simple grid layout using the `RowList` component.
+How to build a basic grid layout using the `RowList` component.
 
 ### 4. [Playing video](/develop/sdk-development/video-playback.md)
 
 How to setup and play video in SceneGraph.
-
-**Resources:**
-* link-to-repo-sample

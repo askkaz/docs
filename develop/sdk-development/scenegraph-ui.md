@@ -1,10 +1,10 @@
-# Building a User Interface with Roku SceneGraph
+# Building a User Interface with SceneGraph
 
-This guide is a continuation from [parsing an XML feed](/develop/sdk-development/parsing-feed.md). In this guide we'll cover building a basic grid layout using SceneGraph.
+In this guide we'll cover building a basic grid layout using SceneGraph. This is a continuation from [parsing an XML feed](/develop/sdk-development/parsing-feed.md) of the [SDK Development Guide](/develop/sdk-development).
 
 ![](../../images/ch-dev-guide-example-ui.jpg)
 
-The main steps include:
+**Steps:**
 
 1. [Scaling for different resolutions](#1-scaling-for-different-resolutions)
 2. [Setup the HomeScene](#2-setup-the-homescene)
@@ -12,26 +12,38 @@ The main steps include:
 4. [Create a overhang banner](#4-create-a-overhang-banner)
 5. [Populate the grid](#5-populate-the-grid)
 6. [Update overhang banner](#6-update-overhang-banner)
+7. [Customizing the grid size](#7-customizing-the-grid-szie)
+
+> :information_source: This guide will make use of the following components. Explore the references below for more information.
+* [Rectangle](https://sdkdocs.roku.com/display/sdkdoc/Rectangle)
+* [RowList](https://sdkdocs.roku.com/display/sdkdoc/RowList)
+* [Group](https://sdkdocs.roku.com/display/sdkdoc/Group)
+* [Label](https://sdkdocs.roku.com/display/sdkdoc/Label)
+* [Poster](https://sdkdocs.roku.com/display/sdkdoc/Poster)
+* [Content Node](https://sdkdocs.roku.com/display/sdkdoc/ContentNode)
+* [Scene](https://sdkdocs.roku.com/display/sdkdoc/Scene)
+
+---
 
 ## 1. Scaling for different resolutions
 
-This example will be designed in FHD (1920x1080) resolution. To ensure the UI scales correctly across different resolutions, the `ui_resolutions` attribute will need to be added to the `manifest`.
+The UI for this example will be designed in FHD (1920x1080) resolution. To ensure the UI scales correctly across different resolutions, the `ui_resolutions` attribute will need to be added to the `manifest`.
 
 In the [Roku Plugin for Eclipse](/develop/developer-tools/eclipse-plugin.md), open the manifest file and add `fhd` to `UI Resolutions` under `Resolution Attributes`.
 
 ![](../../images/eclipse-ui-resolution-setting.png)
 
-If you're not using the Roku Plugin for Eclipse, open the `manifest` in a text editor and add:
+If you're not using the Roku Plugin for Eclipse, open the `manifest` in a text editor and add the following line at the end:
 
 ```brightscript
 ui_resolutions=fhd
 ```
 
+This attribute tells the firmware that the UI is only designed for FHD resolution and will need to be scaled for SD (720x480) and HD (1280x720) resolutions.
+
 ## 2. Setup the HomeScene
 
-We will setup a simple main thread to create our `Screen` object and our message port. The screen will be used to display our home scene for our UI and our message port will be used to listen for events such as a command to exit the channel. Below is the setup for the main thread. Simply create a `.brs` file in the source folder, name it `main.brs`, and use the code below.
-
-> :information_source: `m` is a static variable
+We will setup a simple main thread to create our `Screen` object and our message port. The screen will be used to display our home scene for our UI and a message port will be used to listen for events such as a command to exit the channel. Below is the setup for the main thread. Simply create a `.brs` file in the source folder, name it `main.brs`, and use the code below.
 
 ```brightscript
 sub Main()
@@ -54,18 +66,16 @@ end sub
 
 ## 3. Create a grid using RowList
 
-In the `components` folder is where we will put all our SceneGraph components. Create a new `.xml` file inside the `components` folder and name it `HomeScene`. This will be where we setup our UI. All SceneGraph nodes written in the XML file must be within the `<children>` element.
+The `components` folder is where we will put all our SceneGraph components. Create a new `.xml` file inside the `components` folder and name it `HomeScene.xml` that extends from `Scene`. This will be where we setup our UI.
 
-SceneGraph judges the depth of its elements based off of where they are written inside your XML file. Nodes defined at the top of the XML file will be the furthest back while the bottom will be the nodes displayed at the front. First we will start by making a shaded background and a `RowList` to display on top of it.
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+    <component name="HomeScene" extends="Scene">
+```
 
-> :information_source: Check the references below for the field definitions for each node.
-* [Rectangle](https://sdkdocs.roku.com/display/sdkdoc/Rectangle)
-* [RowList](https://sdkdocs.roku.com/display/sdkdoc/RowList)
-* [Group](https://sdkdocs.roku.com/display/sdkdoc/Group)
-* [Label](https://sdkdocs.roku.com/display/sdkdoc/Label)
-* [Poster](https://sdkdocs.roku.com/display/sdkdoc/Poster)
-* [Content Node](https://sdkdocs.roku.com/display/sdkdoc/ContentNode)
-* [Scene](https://sdkdocs.roku.com/display/sdkdoc/Scene) (`HomeScene extends Scene`)
+> :information_source: SceneGraph judges the depth of its elements based off of where they are written inside your XML file. Nodes defined at the top of the XML file will be the furthest back while the bottom will be the nodes displayed at the front.
+
+First we will start by making a shaded background and a `RowList` to display on top of it. All SceneGraph nodes written in the XML file must be within the `<children>` element.
 
 ```xml
 <!-- All nodes must be inside <children> headers -->
@@ -91,11 +101,50 @@ SceneGraph judges the depth of its elements based off of where they are written 
         showRowLabel= "[true]"
         rowFocusAnimationStyle= "floatingfocus"
     />
+</children>
 ```
+
+Note that `itemComponentName` references `PosterItem`. Create a new file called `PosterItem.xml` in the `components` folder and add the code below:
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="PosterItem" extends="Group">
+    <interface>
+        <field id="width"       type="float" onChange="updateLayout"/>
+        <field id="height"      type="float" onChange="updateLayout"/>
+        <field id="itemContent" type="node" onChange="itemContentChanged" />
+    </interface>
+
+    <script type="text/brightscript">
+        <![CDATA[
+            Sub Init()
+                m.Poster = m.top.findNode("poster")
+            End Sub
+            Sub itemContentChanged()
+                m.Poster.uri = m.top.itemContent.HDPOSTERURL
+                updateLayout()
+            End Sub
+            Sub updateLayout()
+                If m.top.height > 0 And m.top.width > 0 Then
+                    m.Poster.width  = m.top.width
+                    m.Poster.height = m.top.height
+                End If
+            End Sub]]>
+    </script>
+    <children>
+        <Poster id="poster">
+        </Poster>
+    </children>
+</component>
+```
+
+This will take care of any poster scaling issues for different resolutions.
 
 ## 4. Create a overhang banner
 
 Next, we will make an overhang banner that displays the title, description, and artwork of the item being focused on from the `RowList`.
+The `<rectangle>` and `<group>` below are nested within `<children>` on the same level as `<RowList>`.
 
 ```xml
 <!-- Shaded Overhang to display the focused content in the RowList-->
@@ -136,18 +185,22 @@ Next, we will make an overhang banner that displays the title, description, and 
   </Group>
 ```
 
+The completed `HomeScene.xml` file should now look [this](https://github.com/rokudev/scenegraph-ui-sample/blob/master/components/HomeScene.xml).
+
 ## 5. Populate the grid
 
 Now that all our nodes for the UI have been created, we need to populate them with content. This includes assigning the content from our XML feed to our `RowList` and setting the overhang to change based off the focused content in the `RowList`. This is most easily done in BrightScript. To keep our code clean, we will separate our BrightScript and XML in the HomeScene by pointing to a separate `.brs` file from our XML component.
+
+First, create a BrightScript file named `HomeScene.brs` inside the `components` folder. This will be used for the BrightScript code. Also add a `<script>` tag in `HomeScene.xml` referencing the `HomeScene.brs` file.
 
 ```xml
 <component name="HomeScene" extends="Scene">
     <script type = "text/brightscript" uri = "pkg:/components/HomeScene.brs" />
 ```
 
-First create a BrightScript file named `HomeScene.brs` inside the `components` folder. This will be used for the BrightScript code. All SceneGraph nodes have the option of an `init()` function which will be called upon creation of the node. This is helpful for initializing variables, setting focus to an object, creating observer functions, and running a task node.
+All SceneGraph nodes have the option of an `init()` function which will be called upon creation of the node. This is helpful for initializing variables, setting focus to an object, creating observer functions, and running a task node.
 
-To start off in the BrightScript code, we have to reference all the SceneGraph nodes that we want to manipulate. These nodes are referenced by the IDs assigned to each node in the XML.
+To start off, in `HomeScene.brs`, we have to reference all the SceneGraph nodes that we want to manipulate. These nodes are referenced by the IDs assigned to each node in `HomeScene.xml`.
 
 ```brightscript
 Sub init()
@@ -155,16 +208,16 @@ Sub init()
     m.Title = m.top.findNode("Title")
     m.Description = m.top.findNode("Description")
     m.Poster = m.top.findNode("Poster")
-    ...
+End Sub
 ```
 
 > :information_source: `m.top` is used to reference the `HomeScene` node as the BrightScript code belongs to the `HomeScene` node.
 
-Next, set the focus to the `RowList` in `init()` so once the channel is launched, the user can scroll through the `RowList`. We will also create an instance named `LoadTask` for the task node we created to retrieve our XML feed and run it.
+Next, set the focus to the `RowList` in `init()` so once the channel is launched, the user can scroll through the `RowList`. We will also create an instance named `LoadTask` for the task node we created to retrieve the content feed and run it.
 
 ```brightscript
 m.RowList.setFocus(true)
-m.LoadTask = CreateObject("roSGNode", "SampleTaskNode") 'Create XML Parsing task node
+m.LoadTask = CreateObject("roSGNode", "FeedParser") 'Create XML Parsing task node
 m.LoadTask.control = "RUN" 'Run the task node
 ```
 
@@ -172,6 +225,21 @@ We can now set an observer that calls a function when a field is changed. In the
 
 ```brightscript
 m.LoadTask.observeField("content","rowListContentChanged")
+```
+
+The `init()` function should now look like:
+
+```brightscript
+Sub init()
+    m.RowList = m.top.findNode("RowList")
+    m.Title = m.top.findNode("Title")
+    m.Description = m.top.findNode("Description")
+    m.Poster = m.top.findNode("Poster")
+    m.RowList.setFocus(true)
+    m.LoadTask = CreateObject("roSGNode", "FeedParser") 'Create XML Parsing task node
+    m.LoadTask.control = "RUN" 'Run the task node
+    m.LoadTask.observeField("content","rowListContentChanged")
+End Sub
 ```
 
 Once the content field changes, it calls the function `rowListContentChanged()`
@@ -186,13 +254,13 @@ This is done to make sure that the task node is finished before the content is a
 
 ## 6. Update overhang banner
 
-As a final step, we set an observer that changes the info in the overhang when the focus moves onto a new item in the `RowList`.
+We also want to update the banner to show the details for each video. This will be done by setting an observer that changes the info in the overhang when the focus moves onto a new item in the `RowList`.
 
 ```brightscript
 m.RowList.observeField("rowItemFocused", "changeContent")
 ```
 
-This observer calls the function `changeContent()` whenever a new item is focused in the `RowList`.
+This observer calls the function `changeContent()` whenever a new item is focused in the `RowList` and updates the poster, background, title, and description.
 
 ```brightscript
 Sub changeContent() 'Changes info to be displayed on the overhang
@@ -206,10 +274,64 @@ Sub changeContent() 'Changes info to be displayed on the overhang
 End Sub
 ```
 
-Finally, we have our finished UI:
+## 7. Customizing the grid size
+
+If you've had a chance to build and run the channel thus far, you may have noticed that all the content is in one row.
+
+To make the grid more customizable, we'll use a separate function to "slice" up the array of content so that we can have a different number of items in each row. In `FeedParser.brs`, add the following function to the end of the file:
+
+```brightscript
+function SelectTo(array as Object, num = 25 as Integer) as Object 'This method copies an array up to the defined number "num" (default 25)
+    result = []
+    for each item in array
+        result.push(item)
+        if result.Count() >= num
+            exit for
+        end if
+    end for
+    return result
+end Function
+```
+
+Next, we'll need to modify the `loadContent()` function to incorporate our new `SelectTo()` function.
+
+In the modified version below, the function `loadContent()` assigns the variable `oneRow` as an array that contains all the content from the feed. `list` is then assigned as an Array of Associative Array elements containing the title of each row and the content to be loaded.
+
+```brightscript
+Sub loadContent()
+    oneRow = GetContentFeed()
+    list = [
+        'first row in the grid with 3 items across
+        {
+            Title:"Row One"
+            ContentList : SelectTo(oneRow, 3)
+        }
+        'second row in the grid with 5 items across
+        {
+            Title:"Row Two"
+            ContentList : SelectTo(oneRow, 5)
+        }
+        'third row in the grid with 15 items across
+        {
+            Title:"Row Three"
+            ContentList : SelectTo(oneRow, 15)
+        }
+        'fourth row in the grid with 5 items across
+        {
+            Title:"Row Four"
+            ContentList : SelectTo(oneRow, 5)
+        }
+    ]
+    m.top.content = ParseXMLContent(list)
+End Sub
+```
+
+In this example, the grid has been changed so it now shows 4 rows of content with: 3 items in the first row, 5 items in the second, 15 items in the third, and 5 items in the fourth row. Feel free to change these values to create your own custom grid layout.
+
+Here's what our finished UI looks like:
 
 ![](../../images/ch-dev-guide-example-ui.jpg)
 
 ## Adding Video
 
-Proceed to the next section for [adding video playback](/develop/sdk-development/video-playback.md) to this project.
+Proceed to the next guide on [adding video playback](/develop/sdk-development/video-playback.md) to this project.

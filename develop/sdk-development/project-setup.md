@@ -1,4 +1,4 @@
-# Project setup
+# Setting up a project
 
 All Roku channels developed using SceneGraph must contain the following directories and a `manifest` file:
 
@@ -7,37 +7,17 @@ All Roku channels developed using SceneGraph must contain the following director
 * `images` directory
 * `manifest`
 
-In a new project, create a folder for `source`, `components`, and `images`. You can also choose to create a blank file for `manifest` now or as you get to that section below.
+In a new project, create a folder for `source`, `components`, and `images`. You can also choose to create a blank file for `manifest` now or when you get to the manifest section below.
 
 ## Source Directory
 
 The source directory contains BrightScript code for the main application’s execution thread with the extension `.brs`. Most applications will have separate files for SceneGraph scenes and background logic in the `components` folder. The `main.brs` file only needs to create and display `roSGScreen`, used to display the contents of a SceneGraph node tree.
 
-For this example, create a new file in `source` named `main.brs` using the code below. We'll call the Scene `VideoExample`.
-
-```brightscript
-sub Main()
-   screen = CreateObject("roSGScreen")
-   m.port = CreateObject("roMessagePort")
-   screen.setMessagePort(m.port)
-
-   scene = screen.CreateScene("VideoExample")
-   screen.show()
-
-   # exit the channel if back button is pressed at top-level
-   while(true)
-       msg = wait(0, m.port)
-       msgType = type(msg)
-       if msgType = "roSGScreenEvent"
-           if msg.isScreenClosed() then return
-       end if
-   end while
-end sub
-```
+The `main.brs` file will be covered in a later section.
 
 ## Components Directory
 
-The components directory contains all the XML component and associated BrightScript code files needed for your SceneGraph scene. The XML files must have the extension `.xml`, and BrightScript code files must have the extension `.brs`.
+The components directory contains all the XML component and associated BrightScript code needed for the SceneGraph scenes. The XML files must have the extension `.xml`, and BrightScript code files must have the extension `.brs`.
 
 Each XML component file contains a single `<component>` element that contains a specific SceneGraph node/element tree defining that component. When the channel is launched, all the files with extension `.xml` in the `components` directory are loaded and added to the available types of nodes that can be created.
 
@@ -65,7 +45,7 @@ The following fields are required:
 * mm_icon_focus_hd
 * splash_screen_fhd
 
-If you haven't created a manifest file yet, create one now at the root level of your project and fill out the required fields. It should look similar to this:
+If you haven't created a manifest file yet, create a blank file named `manifest` (no extension) at the root level of the project and fill out the required fields. It should look similar to this:
 
 ```brightscript
 title=VideoExample
@@ -79,4 +59,4 @@ splash_screen_fhd=pkg:/images/splash-screen.png
 
 ## Parsing an XML Feed
 
-Proceed to the next section to get started with [Parsing an XML Feed](/develop/sdk-development/parsing-feed.md).
+Proceed to the next section which covers [Parsing an XML Content Feed](/develop/sdk-development/parsing-feed.md).
