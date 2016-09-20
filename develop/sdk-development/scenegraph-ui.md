@@ -12,7 +12,7 @@ In this guide we'll cover building a basic grid layout using SceneGraph. This is
 4. [Create a overhang banner](#4-create-a-overhang-banner)
 5. [Populate the grid](#5-populate-the-grid)
 6. [Update overhang banner](#6-update-overhang-banner)
-7. [Customizing the grid size](#7-customizing-the-grid-szie)
+7. [Customizing the grid size](#7-customizing-the-grid-size)
 
 > :information_source: This guide will make use of the following components. Explore the references below for more information.
 * [Rectangle](https://sdkdocs.roku.com/display/sdkdoc/Rectangle)
