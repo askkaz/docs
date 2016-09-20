@@ -1,3 +1,5 @@
+# Roku Plugin for Eclipse IDE
+
 _Speed up the development, testing, and publishing for channels_
 
 ## Overview
