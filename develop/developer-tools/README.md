@@ -1,6 +1,13 @@
 # Developer Tools
 Plugins, add-ons, and diagnostic tools for building Roku channels.
 
+Sections:
+* [Developer Settings](#developer-settings)
+* [Roku Remote Webpage](#roku-remote-webpage)
+* [Deep link testing](#deep-link-testing)
+* [Stream Testing Tool](#stream-testing-tool)
+* [Roku Eclipse Plugin](#roku-plugin-for-eclipse)
+
 - - -
 
 ## [Developer Settings](/develop/developer-tools/developer-settings.md)
