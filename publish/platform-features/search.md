@@ -1,3 +1,5 @@
+#Roku Search
+
 Roku Search provides another way to convert Roku users into customers of your VOD channel, besides the Roku Channel Store. Roku Search is located on the main menu of the Roku home screen, and allows Roku users to search for a particular movie, TV show/special, or actor/actress/director. Roku Search then allows users to see a list of providers and launch the provider's channel and go directly to the selected piece of content.
 
 By participating in the Roku Search program, all of your content that matches any search, and your channel, is offered automatically to all Roku users who use Roku Search and can use your channel. (Search results are not shown outside the country specified and TVEverywhere (TVE) results are not returned to those who don't have the specific TVE channel installed.)
