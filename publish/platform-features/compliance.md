@@ -1,6 +1,6 @@
 # Compliance
 
-All channel developers must consider the laws and legislation for the countries their content is being streamed. The following guide covers the most common compliance factors to consider for channels on the Roku platform in addition to Roku OS features designed to assist in your legal compliance.
+All channel developers must comply with the laws and legislation for the countries their content is being streamed. The following guide covers the most common compliance factors to consider for channels on the Roku platform in addition to Roku OS features designed to assist in your legal compliance.
 
 - - - -
 
