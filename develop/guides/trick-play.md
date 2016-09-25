@@ -14,7 +14,7 @@ Roku devices implement trick mode by using our BIF (Base Index Frame) file forma
 
 * [Creating BIF files](#creating-bif-files)
   * [Mac and Linux](#mac-and-linux)
-  * [Windows](windows)
+  * [Windows](#windows)
 * [Using BIF files](#using-bif-files)
 
 ---
