@@ -95,6 +95,8 @@ Transaction Details provides information for each transaction completed through 
 
 Transaction Details reports can also be requested on the Transaction Reporting page. This is useful for larger reports that may take some time to generate. Once the report is done processing, it can be downloaded as a `.csv` file. The most recently ran reports will also be saved on this page.
 
+![](../../images/transaction-reporting.png)
+
 ### Web API Settings
 
 This page enables developers to setup a location to receive push notifications for Roku-billed transactions such as credits, sales, refunds, and cancellations.
