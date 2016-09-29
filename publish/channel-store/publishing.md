@@ -60,14 +60,6 @@ Fill out the channel properties:
 
 ![](../../images/dev-dashboard-ch-properties.png)
 
-### Channel Pricing / pay-to-install
-
-If **Customers will pay before installing my channel** was selected on the monetization questionnaire and you’ve enrolled in Roku Billing Services, the **Channel Pricing** page will be presented.
-
-![](../../images/dev-dashboard-ch-pricing.png)
-
-On this page, the type of pay-to-install model (one-time, monthly subscription or yearly subscription) and a corresponding price tier can be selected.
-
 ### Channel Descriptions
 
 On the **Channel Descriptions** page, fill in:
@@ -82,6 +74,14 @@ and upload the Channel Store icons.
 _Note: If multiple languages were selected on the Channel Properties page, the Channel Descriptions page will have a separate section for each language for locale-specific descriptions and Channel Store icons._
 
 ![](../../images/dev-dashboard-ch-descriptions.png)
+
+### Channel Pricing / pay-to-install
+
+If **Customers will pay before installing my channel** was selected on the monetization questionnaire and you’ve enrolled in Roku Billing Services, the **Channel Pricing** page will be presented.
+
+![](../../images/dev-dashboard-ch-pricing.png)
+
+On this page, the type of pay-to-install model (one-time, monthly subscription or yearly subscription) and a corresponding price tier can be selected.
 
 ### Screenshots
 
