@@ -25,11 +25,11 @@ There are two main agreements that developers must review and accept:
 
 ### Developer Terms:
 
-* [Certification Requirements](/develop/channel-store/certification)
+* [Certification Requirements](https://developer.roku.com/develop/channel-store/certification)
 * [Claimed Copyright Infringement Procedures](https://docs.roku.com/doc/dmca/en-gb)
 * [Roku’s Address for Notices](https://docs.roku.com/doc/addressfornotices/en-us)
 * [Roku Advertising Guidelines](http://www.roku.com/adguidelines)
 * [Roku Data Guidelines](https://docs.roku.com/doc/dataguidelines/en-us)
 * [Roku Trademark Guidelines](https://www.roku.com/about/trademark-guidelines)
-* [SDK Developer Documentation](/develop)
-* [Direct Publisher Documentation](/publish)
+* [SDK Developer Documentation](https://developer.roku.com/develop)
+* [Direct Publisher Documentation](https://developer.roku.com/publish)
