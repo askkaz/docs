@@ -17,5 +17,3 @@ Channels on the Roku platfom with a great user experience entertain and delight 
 1. [Roku Remote](roku-remote.md)
 2. [Channel Artwork](channel-artwork.md)
 3. [Roku Display Ads](display-ads.md)
-4. [Roku OS Interface](roku-os-interface.md)
-5. [Design Resources](design-resources.md)
