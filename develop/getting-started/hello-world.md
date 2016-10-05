@@ -53,7 +53,7 @@ The primary screen will show the development application installer:
 ![Development Application Installer](/images/developer-application-installer.png)
 
 **_Related guide:_**
-[_How to update the software on a Roku device_](https://support.roku.com/hc/en-us/articles/208755668-How-can-I-update-the-software-on-my-Roku-player-\)
+[_How to update the software on a Roku device_](https://support.roku.com/article/208755668-how-can-i-update-the-software-on-my-roku-player)
 
 ## 3\. Download and Install the Sample Channel Application
 
@@ -143,6 +143,6 @@ You will immediately see the edited phrase in your Sample Channel Application:
 
 ## 5\. Explore the Developer docs!
 
-Go to the [Channel Development Guide](/develop/channel-development) and explore the methods, parameters, and syntax for building rich and complex channel applications on the Roku platform.
+For a more in depth look at building a channel from start to finish, check out the [SDK Development Guide](/develop/sdk-development) and learn how to setup a project, parse a content feed, build a UI, and how to play content.
 
-For samples regarding our new XML framework, Roku SceneGraph, go to [Channel Samples Gallery](/develop/guides/examples.md) to get started!
+For samples regarding our new XML framework, Roku SceneGraph, go to [Channel Samples Gallery](/develop/guides/) to get started!
