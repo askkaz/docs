@@ -53,6 +53,8 @@ Details on supported formats and specifications on the Roku Platform
 * [Content Protection](/develop/specifications/content-protection.md) - supported DRM formats and specifications
 * [Closed Captioning](/develop/specifications/closed-captioning.md) - supported caption formats and specifications
 * [Manifest file](/develop/specifications/manifest.md) - Manifest specifications and attributes
+* [Advertising URL Parameter Macros](/develop/specifications/ad-parameter-macros.md) - parameters for ad request and tracking URLs
+* [VAST and VMAP Support](/develop/specifications/vast-vmap-support.md) - supported VAST and VMAP features
 
 ## [Developer Tools](/develop/developer-tools)
 
@@ -60,3 +62,6 @@ Essential tools for building on the Roku Platform
 
 * [Developer Settings](/develop/developer-tools/developer-settings.md) - Overview of the utilities included with each Roku device
 * [Roku Plugin for Eclipse IDE](/develop/developer-tools/eclipse-plugin.md) - Official plugin for developing Roku applications using the Eclipse IDE
+* [Roku Remote Webpage](/develop/developer-tools#roku-remote-webpage) - Roku remote in your browser
+* [Deep Linking Tester](/develop/developer-tools#deep-link-testing) - test ECP commands linking into your channels
+* [Stream Tester Tool](/develop/developer-tools#stream-testing-tool) - test media and ad server URLs directly from your browser
