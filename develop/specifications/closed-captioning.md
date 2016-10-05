@@ -39,8 +39,8 @@ Roku devices support the following formats:
 ## Closed Caption Support Summary
 Below you can find a quick summary of the closed caption formats supported for each streaming format:
 
-|   | SMPTE-TT | EIA-608 | WebVTT |
-| - | -------- | ------- | ------ |
+|     | SMPTE-TT | EIA-608 | WebVTT |
+| --- | -------- | ------- | ------ |
 | **MP4 VOD** | Yes (external file only) | Yes (in stream only for all manifests containing AVC streams) | No
 | **HLS VOD** | Yes (external file only) | Yes (in stream only for all manifests containing AVC streams) | Yes (in a separate stream described in the manifest ( playlist for HLS))
 | **HLS Live** | No | Yes (in stream only for all manifests containing AVC streams) | Yes  (in a separate stream described in the manifest ( playlist for HLS))
@@ -94,7 +94,7 @@ For more details on using captions in an MRSS feed, see [MRSS Feed Specification
 <media:subTitle lang="en-us" href="http://www.example.org/cdn/subtitles/sub-en.srt" />
 ```
 
-## SMPTE-TT Support
+## SMTPE-TT Support
 
 Roku's TTML parser will recognize regions, styles, and spans. The captions are recognized as `p` paragraph elements with a `begin` and `end` time. Roku's TTML does not recognized the `duration` attribute for captions.
 
@@ -109,9 +109,9 @@ The Roku TTML parser recognizes the following elements from Section 7 of the TTM
 * [7.1.1 tt](http://www.w3.org/TR/ttaf1-dfxp/#document-structure-vocabulary-tt)
 * [7.1.2 head](http://www.w3.org/TR/ttaf1-dfxp/#document-structure-vocabulary-head)
 * [7.1.3 body](http://www.w3.org/TR/ttaf1-dfxp/#document-structure-vocabulary-body)
-* [7.1.4 div](http://www.w3.org/TR/ttaf1-dfxp/#document-structure-vocabulary-div)
-* [7.1.5 p](http://www.w3.org/TR/ttaf1-dfxp/#document-structure-vocabulary-p)
-* [7.1.6 span](http://www.w3.org/TR/ttaf1-dfxp/#document-structure-vocabulary-span)
+* [7.1.4 div](https://www.w3.org/TR/ttaf1-dfxp/#content-vocabulary-div)
+* [7.1.5 p](https://www.w3.org/TR/ttaf1-dfxp/#content-vocabulary-p)
+* [7.1.6 span](https://www.w3.org/TR/ttaf1-dfxp/#content-vocabulary-span)
 
 ### Styling
 
