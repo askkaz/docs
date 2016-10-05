@@ -36,12 +36,13 @@ Guides for core features of the Roku Platform
 * [Private channels](/develop/guides/private-channels.md) - Overview on private channels
 * [Examples](/develop/guides/examples.md) - Overview of available example channels
 
-## [SDK Documentation](/develop/sdk-documentation)
+## [SDK Documentation](https://sdkdocs.roku.com)
 
 API References
 
-* [BrightScript Reference](/develop/sdk-documentation/brightscript-reference.md) - BrightScript API Documentation
-* [SceneGraph Reference](/develop/sdk-documentation/scenegraph-reference.md) - SceneGraph API Documentation
+* [BrightScript Language Reference](https://sdkdocs.roku.com/display/sdkdoc/BrightScript+Language+Reference)
+* [BrightScript Component Reference](https://sdkdocs.roku.com/display/sdkdoc/BrightScript+Component+Reference)
+* [SceneGraph Reference](https://sdkdocs.roku.com/display/sdkdoc/Scene+Graph+XML+Reference)
 
 
 ## [Specifications](/develop/specifications)
