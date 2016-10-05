@@ -64,4 +64,4 @@ Roku Billing is offered in all Channel Store regions. Customer purchases and dev
 > :information_source: When your Paypal account receives currencies listed above, Paypal offers conversion options for your preferred currency (fees may apply). [More info on Paypal currencies](https://www.paypal.com/us/cgi-bin/webscr?cmd=p/sell/mc/mc_receive-outside).
 
 
-To learn more about purchases on the Roku publishing platform, [click here](/publish/monetization/purchases).
+To learn more about purchases on the Roku publishing platform, [click here](/publish/monetization/purchases.md).
