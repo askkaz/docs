@@ -1,3 +1,5 @@
+# Developer Setup Guide
+
 ### Overview
 
 The first step to building channels on the Roku platform is setting up a development environment. In this guide, we will cover the essential steps setting up “developer mode” using any Roku device.
