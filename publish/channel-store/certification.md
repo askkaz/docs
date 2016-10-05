@@ -1,3 +1,5 @@
+# Certification
+
 In order to assure the overall quality of the Roku Platform, all public channels in the Roku Channel Store must first be reviewed for quality, design, and performance criteria before being published. This certification process also ensures that new additions to the Channel Store properly integrate our latest platform initiatives.
 
 ## Preparing for certification

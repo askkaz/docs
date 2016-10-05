@@ -1,3 +1,5 @@
+# Channel Store
+
 _Browse the Channel Store to find the best content on the Roku Platform_
 
 ![Screenshot of Channel Store Featured Channels section](../../images/featured.png)
