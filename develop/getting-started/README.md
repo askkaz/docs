@@ -17,4 +17,4 @@ The following guides will show how to get up and running quickly:
 
 3. Our introductory [Hello World Tutorial](/develop/getting-started/hello-world.md) offers a downloadable sample application for developing on the Roku Platform.
 
-4. Our latest [sample Roku channels](/sample-channels) and [tutorials](/develop/guides) cover how to integrate essential features into your channels.
+4. Our latest [sample Roku channels](https://github.com/rokudev/sample-channels) and [tutorials](/develop/guides) cover how to integrate essential features into your channels.
