@@ -19,13 +19,10 @@ Getting started with developing on the Roku Platform
 
 ## [Design](/design/)
 
-* [Roku OS Interface](/design/roku-os-interface.md)
 * [Roku Remote](/design/roku-remote.md)
 * [UX Guidelines](/design/design-guidelines.md)
 * [Channel Artwork](/design/channel-artwork.md)
 * [Roku Display Ads](/design/display-ads.md)
-* [Design Resources](/design/design-resources.md)
-* [Design Showcase](/design/design-showcase.md)
 
 
 ## [Develop](/develop/)
@@ -34,7 +31,6 @@ Getting started with developing on the Roku Platform
 * [SDK Development Guide](/develop/sdk-development/)
 * [Developer Guides and Tutorials](/develop/guides/)
  * [Examples Gallery](/develop/guides/examples.md)
-* [SDK Reference](/develop/sdk-documentation)
 * [Specifications](/develop/specifications/)
 * [Developer Tools](/develop/developer-tools)
 
@@ -45,5 +41,4 @@ Getting started with developing on the Roku Platform
 * [Channel Store](/publish/channel-store/)
  * [Developer Dashboard](/publish/channel-store/developer-dashboard.md)
 * [Monetization](/publish/monetization)
-* [Channel Showcase](/publish/channel-showcase/)
 * [Beta Developers](/publish/beta-developer-program)
