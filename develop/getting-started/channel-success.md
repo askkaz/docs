@@ -39,7 +39,7 @@ Guidelines to effectively test channel quality, detect regressions, and meet our
 * [Performance](/develop/guides/performance.md) - Best practices for managing resources across devices
 * [Debug](/develop/guides/debugging.md) - Various functions of the telnet debug console
 * [Tools](/develop/developer-tools) - Plugins, add-ons, and diagnostic tools for building quality channels
-* [Certification Checklist](/publish/channel-store/certification) - The comprehensive list of certification requirements and device overview
+* [Certification Checklist](/publish/channel-store/certification.md) - The comprehensive list of certification requirements and device overview
 
 ## :tv: Publish
 Specifications and required channel assets, setting expectations for the channel submission process, and verifying all legal requirements
