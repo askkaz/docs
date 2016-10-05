@@ -9,7 +9,7 @@ Roku has built-in analytics and metrics dashboard available for publishers and c
 ![Analytics](https://roku-developer-home-ghost-staging.s3.amazonaws.com/2016/Sep/Y2hhbm5lbF9wZXJmb3JtYW5jZS0xNDc0Njc4ODY2NzEy.jpg)
 
 ## Channel Analytics
-The [Roku Developer Dashboard](/developer/) provides deep measurement capabilities for all channels.
+The [Roku Developer Dashboard](https://developer.roku.com/developer/) provides deep measurement capabilities for all channels.
 
 **Channel Performance Metrics**
 

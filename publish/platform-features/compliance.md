@@ -11,8 +11,8 @@ For traditional broadcast TV, closed captioning and visual description laws have
 
 **Roku and CVAA** - For channels on the Roku Publishing Platform, we have several tools to assist in compliance:
 
-* **Closed captioning** - Make sure to provide closed captioning for your video content. Read our guide to learn more ([Closed captioning docs](https://github.com/rokudev/docs/blob/master/develop/specifications/closed-captioning.md))
-* **SceneGraph Audio Hinting** - Using the [SceneGraph XML framework](https://github.com/rokudev/docs/tree/master/develop/sdk-development), channels built in SceneGraph will have built in support for Text to speech. When text elements such as lists, grids, posters, labels, etc are active - Roku OS will speak the text values on the TV. This will ensure the majority of new channels will comply.
+* **Closed captioning** - Make sure to provide closed captioning for your video content. Read our guide to learn more ([Closed captioning docs](/develop/specifications/closed-captioning.md))
+* **SceneGraph Audio Hinting** - Using the [SceneGraph XML framework](/develop/sdk-development), channels built in SceneGraph will have built in support for Text to speech. When text elements such as lists, grids, posters, labels, etc are active - Roku OS will speak the text values on the TV. This will ensure the majority of new channels will comply.
 * **Text to Speech APIs** - Roku provides low level text to speech support in channels via the [roTextToSpeech](https://sdkdocs.roku.com/display/sdkdoc/ifTextToSpeech) and [roTextToSpeechEvent](https://sdkdocs.roku.com/display/sdkdoc/roTextToSpeechEvent) components. This is useful for custom voiceover prompts in channels.
 
 ## COPPA
@@ -26,9 +26,9 @@ Channels must adhere to leglislation in countries their content is availble in. 
 
 **Related resources:**
 
-* [Closed captioning docs](https://github.com/rokudev/docs/blob/master/develop/specifications/closed-captioning.md)
-* [SceneGraph XML framework](https://github.com/rokudev/docs/tree/master/develop/sdk-development)
-* [roTextToSpeech](https://sdkdocs.roku.com/display/sdkdoc/ifTextToSpeech)
+* [Closed captioning docs](/develop/specifications/closed-captioning.md)
+* [SceneGraph XML framework](/develop/sdk-development)
+* [roTextToSpeech](https://sdkdocs.roku.com/display/sdkdoc/roTextToSpeech) / [ifTextToSpeech](https://sdkdocs.roku.com/display/sdkdoc/ifTextToSpeech)
 * [roTextToSpeechEvent](https://sdkdocs.roku.com/display/sdkdoc/roTextToSpeechEvent)
 * [Children's Online Privacy Protection Rule (COPPA)](https://www.ftc.gov/enforcement/rules/rulemaking-regulatory-reform-proceedings/childrens-online-privacy-protection-rule)
 * [roku.com/legal](https://www.roku.com/legal)
