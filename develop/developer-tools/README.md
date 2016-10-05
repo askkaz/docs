@@ -27,7 +27,7 @@ Sections:
 ## [Stream Testing Tool](http://devtools.web.roku.com/stream_tester/html)
 
 [![Link Tester](https://github.com/rokudev/docs/raw/master/images/Roku_Stream-Tester.jpg)](http://devtools.web.roku.com/stream_tester/html)
-[Stream Testing Tool](http://devtools.web.roku.com/stream_tester/html) -  Tests stream playback from media URLs for content and ad severs. In addition, this tool can simulate a video and ad playback experience. _(**Note:** This tool requires a [companion Roku channel](https://my.roku.com/add/KX3UPK) to be installed on your device)_
+[Stream Testing Tool](http://devtools.web.roku.com/stream_tester/html) -  Test playback from media URLs for content and ad servers. In addition, this tool can simulate a video and ad playback experience. _(**Note:** This tool requires a [companion Roku channel](https://my.roku.com/add/KX3UPK) to be installed on your device)_
 
 ## [Roku Plugin for Eclipse IDE](https://github.com/rokudev/docs/tree/master/develop/developer-tools/eclipse-plugin.md)
 [![Eclipse screenshot](https://github.com/rokudev/docs/raw/master/images/eclipse_1.png)](https://github.com/rokudev/docs/tree/master/develop/developer-tools/eclipse-plugin.md)
